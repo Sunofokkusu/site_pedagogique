@@ -142,19 +142,19 @@ h2 {
   cursor: pointer;
 }
 .portrait {
-  background-image: url("../assets/photos/portait/teCassePasLaTete.png");
+  background-image: url("../assets/photos/teCassePasLaTete.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .paysage {
-  background-image: url("../assets/photos/paysage/Anne-sophieCOSTENOBLE.png");
+  background-image: url("../assets/photos/Anne-sophieCOSTENOBLE.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .abstrait {
-  background-image: url("../assets/photos/abstrait/bayle.PNG");
+  background-image: url("../assets/photos/bayle.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -166,25 +166,25 @@ h2 {
   background-size: cover;
 }
 .jaune {
-  background-image: url("../assets/photos/jaune/LVIV.PNG");
+  background-image: url("../assets/photos/LVIV.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .bleu {
-  background-image: url("../assets/photos/bleu/space.PNG");
+  background-image: url("../assets/photos/space.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .noir {
-  background-image: url("../assets/photos/noir/samedi25avril.PNG");
+  background-image: url("../assets/photos/samedi25avril.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .gris {
-  background-image: url("../assets/photos/gris/hivernies.PNG");
+  background-image: url("../assets/photos/hivernies.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
