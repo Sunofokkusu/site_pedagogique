@@ -154,7 +154,7 @@ h2 {
   background-size: cover;
 }
 .abstrait {
-  background-image: url("../assets/photos/bayle.PNG");
+  background-image: url("../assets/photos/bayle.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -166,25 +166,25 @@ h2 {
   background-size: cover;
 }
 .jaune {
-  background-image: url("../assets/photos/LVIV.PNG");
+  background-image: url("../assets/photos/LVIV.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .bleu {
-  background-image: url("../assets/photos/space.PNG");
+  background-image: url("../assets/photos/space.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .noir {
-  background-image: url("../assets/photos/samedi25avril.PNG");
+  background-image: url("../assets/photos/samedi25avril.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .gris {
-  background-image: url("../assets/photos/hivernies.PNG");
+  background-image: url("../assets/photos/hivernies.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -2,7 +2,13 @@
   <div>
     <headerPage />
     <div class="corps">
-      {{ jsonPhotosSorted }}
+      <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
+        <img :src="getImg(photo.chemin)" />
+        <h2>{{ photo.nom }}</h2>
+        <p>- {{ photo.photographe }}</p>
+        <p>{{ photo.description }}</p>
+        <hr />
+      </div>
     </div>
   </div>
 </template>
@@ -16,16 +22,22 @@ export default {
   data() {
     return {
       jsonPhotos: myJSON,
-      jsonPhotosSorted: []
-    }
+      jsonPhotosSorted: [],
+    };
   },
-  mounted(){
+  mounted() {
+    window.scroll(0, 0);
     this.jsonPhotos.photographies.forEach((photo) => {
-      if(photo.theme === "paysage"){
+      if (photo.theme === "paysage") {
         this.jsonPhotosSorted.push(photo);
       }
-    })
-  }
+    });
+  },
+  methods: {
+    getImg(img) {
+      return require(`../assets/photos/${img}`);
+    },
+  },
 };
 </script>
 
@@ -33,7 +45,7 @@ export default {
 body {
   margin: 0 !important;
 }
-.corps{
+.corps {
   margin-top: 60px;
 }
 </style>
