@@ -3,10 +3,14 @@
     <headerPage />
     <div class="corps">
       <div class="photosInfos" v-for="photo in jsonPhotos.photographies" :key="photo">
-        <img :src="getImg(photo.chemin)" />
-        <h2>{{ photo.nom }}</h2>
-        <p>- {{ photo.photographe }}</p>
-        <p>{{ photo.description }}</p>
+        <div class="row">
+          <img class="col-4" :src="getImg(photo.chemin)" />
+          <div class="col-6">
+            <h2>{{ photo.nom }}</h2>
+            <p>- {{ photo.photographe }}</p>
+            <p>{{ photo.description }}</p>
+          </div>
+        </div>
         <hr />
       </div>
     </div>
