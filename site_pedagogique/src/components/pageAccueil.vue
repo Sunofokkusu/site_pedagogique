@@ -128,7 +128,7 @@ h2 {
   font-weight: bold;
 }
 .photos {
-  height: 110vh;
+  height: 100%;
   color: black;
 }
 .row {
