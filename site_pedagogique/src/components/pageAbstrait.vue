@@ -1,16 +1,39 @@
 <template>
-    <div>ici abs</div>
-  </template>
-  
-  <script>
-  export default {
-    name: "pageAbstrait",
-  };
-  </script>
-  
-  <style>
-  body {
-    margin: 0 !important;
+  <div>
+    <headerPage />
+    <div class="corps">
+      {{ jsonPhotosSorted }}
+    </div>
+  </div>
+</template>
+
+<script>
+import headerPage from "@/components/headerPages.vue";
+import myJSON from "@/assets/photos.json";
+export default {
+  name: "pageAbstrait",
+  components: { headerPage },
+  data() {
+    return {
+      jsonPhotos: myJSON,
+      jsonPhotosSorted: []
+    }
+  },
+  mounted(){
+    this.jsonPhotos.photographies.forEach((photo) => {
+      if(photo.theme === "abstrait"){
+        this.jsonPhotosSorted.push(photo);
+      }
+    })
   }
-  </style>
-  
+};
+</script>
+
+<style>
+body {
+  margin: 0 !important;
+}
+.corps{
+  margin-top: 60px;
+}
+</style>
