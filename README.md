@@ -1,1 +1,1 @@
-# site_pedagogique
+# Site pédagogique pour l'événement photographique
