@@ -84,14 +84,68 @@
       </div>
     </div>
     <div class="infos">
-      <h2>INFORMATIONS</h2>
+      <h2 class="infoTitle">INFORMATIONS</h2>
+      <div class="row pb">
+        <div class="col-4">
+          47 Bd d’Austrasie – à côté de l’Autre Canal <br />
+          <div class="map">
+            <l-map ref="map" :zoom="zoom" :center="[48.693143444429246, 6.1993434429581304]">
+              <l-tile-layer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                layer-type="base"
+                name="OpenStreetMap"
+              ></l-tile-layer>
+              <l-marker :lat-lng="[48.693143444429246, 6.1993434429581304]" ></l-marker>
+            </l-map>
+          </div>
+        </div>
+        <div class="col-8">
+          L’OCTROI NANCY. Du 12 mai au 4 juin 2023<br />
+          Vernissage • 12 mai 2023 à 18h <br />
+          <hr class="sepInfo" />
+          Entrée payante: Prix libre <br />
+          <hr class="sepInfo" />
+          Ouverture:<br />
+          <strong>Mardi, mercredi, jeudi</strong> 15h > 19h<br />
+          <strong>Vendredi</strong> 15h > 23h<br />
+          <strong>Samedi</strong> 14h > 23h<br />
+          <strong>Dimanche</strong> 14h > 18h<br />
+          <strong>Lundi 29 mai</strong> 15h > 19h <br />
+        </div>
+      </div>
+      <div class="pb2">
+        <strong>Site web</strong> :
+        <a href="https://evenement-photographique.fr"
+          >https://evenement-photographique.fr</a
+        ><br />
+        <strong>Instagram</strong> :
+        <a href="https://www.instagram.com/levenementphotonancy"
+          >https://www.instagram.com/levenementphotonancy</a
+        ><br />
+        <strong>Page FB</strong> :
+        <a href="https://www.facebook.com/EvenementPhotographiqueNancy"
+          >https://www.facebook.com/EvenementPhotographiqueNancy</a
+        ><br />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import "leaflet/dist/leaflet.css";
+import { LMap,LTileLayer,LMarker } from "@vue-leaflet/vue-leaflet";
 export default {
   name: "pageAccueil",
+  components: {
+    LMap,
+    LTileLayer,
+    LMarker
+  },
+  data() {
+    return {
+      zoom: 15,
+    };
+  },
 };
 </script>
 
@@ -130,6 +184,7 @@ h2 {
 .photos {
   height: 100%;
   color: black;
+  background-color: white;
 }
 .row {
   justify-content: center;
@@ -189,14 +244,35 @@ h2 {
   background-position: center;
   background-size: cover;
 }
-hr{
-    border-top: white;
+hr {
+  border-top: white;
+}
+.infoTitle {
+  color: white;
 }
 .infos {
   background-color: black;
   color: white;
 }
+.sepInfo {
+  width: 40%;
+}
+.map {
+  height: 100%;
+  width: 100%;
+  margin-left: 20px;
+}
 body {
   margin: 0 !important;
+}
+.pb {
+  padding-bottom: 100px;
+}
+.pb2 {
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: underline;
+  color: white;
 }
 </style>
