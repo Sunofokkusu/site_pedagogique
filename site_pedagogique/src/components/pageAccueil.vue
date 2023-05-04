@@ -86,7 +86,7 @@
     <div class="infos">
       <h2 class="infoTitle">INFORMATIONS</h2>
       <div class="row pb">
-        <div class="col-4">
+        <div class="col-4 adress">
           47 Bd d’Austrasie – à côté de l’Autre Canal <br />
           <div class="map">
             <l-map ref="map" :zoom="zoom" :center="[48.693143444429246, 6.1993434429581304]">
@@ -99,7 +99,7 @@
             </l-map>
           </div>
         </div>
-        <div class="col-8">
+        <div class="col-4">
           L’OCTROI NANCY. Du 12 mai au 4 juin 2023<br />
           Vernissage • 12 mai 2023 à 18h <br />
           <hr class="sepInfo" />
@@ -266,7 +266,6 @@ hr {
 .map {
   height: 100%;
   width: 100%;
-  margin-left: 20px;
 }
 body {
   margin: 0 !important;
