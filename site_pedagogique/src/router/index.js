@@ -13,7 +13,7 @@ import pageGris from '@/components/pageGris.vue';
 const routes = [
    { name: "PageAccueil", path: "/", component: PageAccueil },
    { name: "notFound", path: "/:pathMatch(.*)*", component: notFound},
-   { name: "pagePortrait", path: "/personne", component: pagePortrait},
+   { name: "pagePortrait", path: "/portrait", component: pagePortrait},
    { name: "pagePaysage", path: "/paysage", component: pagePaysage},
    { name: "pageAbstrait", path: "/abstrait", component: pageAbstrait},
    { name: "allPhotos", path: "/all", component: allPhotos},
