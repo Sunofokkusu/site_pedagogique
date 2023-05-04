@@ -203,7 +203,7 @@ h2 {
   cursor: pointer;
 }
 .portrait {
-  background-image: url("../assets/photos/teCassePasLaTete.png");
+  background-image: url("../assets/photos/jeFixeraiDesVertiges.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
