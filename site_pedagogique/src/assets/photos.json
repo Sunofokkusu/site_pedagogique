@@ -279,14 +279,6 @@
             "description":"",
             "theme":"paysage",
             "couleur":"noir"
-        },
-        {
-            "chemin":"teCassePasLaTete.png",
-            "nom":"Te casse pas la tête",
-            "photographe":"Baptiste COZZUPOLI",
-            "description":"",
-            "theme":"portrait",
-            "couleur":"noir"
         }
     ]
 }
