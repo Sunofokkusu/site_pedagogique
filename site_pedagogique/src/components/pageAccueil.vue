@@ -19,9 +19,9 @@
       <div class="row">
         <div
           class="card portrait col-2"
-          @click="this.$router.push({ name: 'pagePortrait' })"
+          @click="this.$router.push({ name: 'pagePersonne' })"
         >
-          PORTAITS
+          PERSONNES
           <hr />
         </div>
         <div
@@ -128,24 +128,30 @@
         ><br />
       </div>
     </div>
+    <footerPage/>
   </div>
 </template>
 
 <script>
 import "leaflet/dist/leaflet.css";
+import footerPage from '@/components/footerPage.vue';
 import { LMap,LTileLayer,LMarker } from "@vue-leaflet/vue-leaflet";
 export default {
   name: "pageAccueil",
   components: {
     LMap,
     LTileLayer,
-    LMarker
+    LMarker,
+    footerPage
   },
   data() {
     return {
       zoom: 15,
     };
   },
+  mounted(){
+    window.scroll(0, 0);
+  }
 };
 </script>
 
