@@ -239,7 +239,7 @@ h2 {
   background-size: cover;
 }
 .noir {
-  background-image: url("../assets/photos/samedi25avril.png");
+  background-image: url("../assets/photos/surLaTerreCommeAuCiel.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
