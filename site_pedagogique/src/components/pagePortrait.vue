@@ -2,12 +2,13 @@
   <div>
     <headerPage />
     <div class="corps">
+      <h2>PHOTOS DE PORTRAITS</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
           <div class="col-6">
             <h2>{{ photo.nom }}</h2>
-            <p>- {{ photo.photographe }}</p>
+            <p>{{ photo.photographe }}</p>
             <p>{{ photo.description }}</p>
           </div>
         </div>
