@@ -15,15 +15,17 @@
         <hr />
       </div>
     </div>
+    <footerPage/>
   </div>
 </template>
 
 <script>
 import headerPage from "@/components/headerPages.vue";
+import footerPage from '@/components/footerPage.vue';
 import myJSON from "@/assets/photos.json";
 export default {
   name: "allPhotos",
-  components: { headerPage },
+  components: { headerPage,footerPage },
   data() {
     return {
       jsonPhotos: myJSON

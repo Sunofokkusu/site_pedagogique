@@ -15,15 +15,21 @@
         <hr />
       </div>
     </div>
+    <div class="navigation">
+      <span class="prev" @click="this.$router.push({ name: 'pagePersonne' })">◀ Personne</span>
+      <span class="next" @click="this.$router.push({ name: 'pageAbstrait' })">Abstrait ▶</span>
+    </div>
+    <footerPage/>
   </div>
 </template>
 
 <script>
 import headerPage from "@/components/headerPages.vue";
+import footerPage from '@/components/footerPage.vue';
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pagePaysage",
-  components: { headerPage },
+  components: { headerPage,footerPage },
   data() {
     return {
       jsonPhotos: myJSON,
@@ -52,5 +58,20 @@ body {
 }
 .corps {
   margin-top: 60px;
+}
+.navigation {
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.next {
+  margin-left: 5%;
+}
+.next,.prev{
+  cursor: pointer;
 }
 </style>
