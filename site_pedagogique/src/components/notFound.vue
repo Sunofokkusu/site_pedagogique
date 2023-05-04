@@ -26,4 +26,7 @@ export default {
 .center{
     text-align: center;
 }
+.homeP{
+  cursor: pointer;
+}
 </style>
