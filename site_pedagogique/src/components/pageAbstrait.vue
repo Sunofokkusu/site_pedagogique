@@ -17,7 +17,7 @@
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pagePaysage' })">◀ Paysage</span>
-      <span class="next" @click="this.$router.push({ name: 'pagePersonne' })">Personne ▶</span>
+      <span class="next" @click="this.$router.push({ name: 'pagePortrait' })">Personne ▶</span>
     </div>
     <footerPage/>
   </div>

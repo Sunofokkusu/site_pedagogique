@@ -19,9 +19,9 @@
       <div class="row">
         <div
           class="card portrait col-2"
-          @click="this.$router.push({ name: 'pagePersonne' })"
+          @click="this.$router.push({ name: 'pagePortrait' })"
         >
-          PERSONNES
+          PORTRAITS
           <hr />
         </div>
         <div
