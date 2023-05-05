@@ -11,19 +11,43 @@
       </p>
       <h2>Les portraits connus dans l'art</h2>
       <div class="row">
-        <img class="col-2" src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-la-joconde-leonard-de-vinci-260x387.jpg"/>
-        <img class="col-2 img" src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-autoportrait-a-loreille-vincent-van-gogh-688x836.jpg"/>
-        <img class="col-2 img" src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-la-jeune-fille-a-la-perle-johannes-vermeer-688x815.jpg"/>
-        <img class="col-2 img" src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-portrait-dadele-bloch-bauer-klimt-600x600.jpg"/>
-        <img class="col-2 img" src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-afghane-aux-yeux-vert-steve-mccurry-688x1032.jpg"/>
+        <img
+          class="col-2"
+          src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-la-joconde-leonard-de-vinci-260x387.jpg"
+        />
+        <img
+          class="col-2 img"
+          src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-autoportrait-a-loreille-vincent-van-gogh-688x836.jpg"
+        />
+        <img
+          class="col-2 img"
+          src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-la-jeune-fille-a-la-perle-johannes-vermeer-688x815.jpg"
+        />
+        <img
+          class="col-2 img"
+          src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-portrait-dadele-bloch-bauer-klimt-600x600.jpg"
+        />
+        <img
+          class="col-2 img"
+          src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-afghane-aux-yeux-vert-steve-mccurry-688x1032.jpg"
+        />
       </div>
       <div class="row">
-        <div class="col-2">La Joconde,  de Léonard de Vinci</div>
-        <div class="col-2 img">Autoportrait à l’oreille, de Vincent Van Gogh</div>
-        <div class="col-2 img">La jeune fille à la perle, de Johannes Vermeer</div>
-        <div class="col-2 img">Portrait d’Adele Bloch Bauer I, Gustav Klimt</div>
+        <div class="col-2">La Joconde, de Léonard de Vinci</div>
+        <div class="col-2 img">
+          Autoportrait à l’oreille, de Vincent Van Gogh
+        </div>
+        <div class="col-2 img">
+          La jeune fille à la perle, de Johannes Vermeer
+        </div>
+        <div class="col-2 img">
+          Portrait d’Adele Bloch Bauer I, de Gustav Klimt
+        </div>
         <div class="col-2 img">L’afghane aux yeux verts, de Steve McCurry</div>
       </div>
+      <h2>A toi de jouer!</h2>
+      <p>Place toi devant la caméra pour voir ton portrait (si rien ne s'affiche, autorise l'accès à la caméra au navigateur).</p>
+      <video id="webcam" autoplay></video>
       <h2>Les portraits de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
@@ -69,6 +93,25 @@ export default {
         this.jsonPhotosSorted.push(photo);
       }
     });
+    navigator.mediaDevices
+      .getUserMedia({ video: true })
+      .then((stream) => {
+        // Afficher le flux vidéo dans la balise vidéo
+        document.querySelector("#webcam").srcObject = stream;
+        // Attendre que la vidéo soit prête
+        document.querySelector("#webcam").onloadedmetadata = () => {
+          // Lire les codes QR à partir du flux vidéo
+          setInterval(() => {
+            const video = document.getElementById("webcam");
+            const canvas = document.createElement("canvas");
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            canvas.getContext("2d").drawImage(video, 0, 0);})
+        };
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   },
   methods: {
     getImg(img) {
@@ -85,11 +128,11 @@ body {
 .corps {
   margin-top: 60px;
 }
-.def{
+.def {
   margin-left: 20px;
   margin-right: 20px;
 }
-.img{
+.img {
   margin-left: 20px;
 }
 .navigation {
@@ -107,5 +150,10 @@ body {
 .next,
 .prev {
   cursor: pointer;
+}
+#webcam{
+  width: 90%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 </style>
