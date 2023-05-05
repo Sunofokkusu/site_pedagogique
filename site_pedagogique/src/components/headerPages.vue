@@ -16,6 +16,7 @@
     margin: 0 !important;
   }
   .topPage{
+    z-index: 100;
     display: flex;
     position: fixed;
     align-items: center;
