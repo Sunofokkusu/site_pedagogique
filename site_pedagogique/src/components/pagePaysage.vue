@@ -44,21 +44,15 @@
       </div>
       <h2>A toi de jouer!</h2>
       <p>Créer ton propre paysage en choisissant son contenu.</p>
-        <div v-if="ok" class="mainCanvas">
-          <img :src="getImgPays(tab1[iHaut])" class="overlayImage"/>
-          <img :src="getImgPays(tab2[iMilieu])" class="overlayImage"/>
-          <img :src="getImgPays(tab3[iBas])" class="overlayImage"/>
-        </div>  
+      <div v-if="ok" class="mainCanvas">
+        <img :src="getImgPays(tab1[iHaut])" class="overlayImage" />
+        <img :src="getImgPays(tab2[iMilieu])" class="overlayImage" />
+        <img :src="getImgPays(tab3[iBas])" class="overlayImage" />
+      </div>
       <div class="row">
-        <div class="col-2 choix">
-          ici
-        </div>
-        <div class="col-2 choix choixL">
-          ici
-        </div>
-        <div class="col-2 choix choixL">
-          ici
-        </div>
+        <div @click="changeBas('gauche')" class="btn">CLICK</div><div class="col-2 choix"><img :src="getImgPays(tab3[iBas])" class="previewImg" /></div><div @click="changeBas('droite')" class="btn">CLICK</div>
+        <div @click="changeMilieu('gauche')" class="btn">CLICK</div><div class="col-2 choix choixL"><img :src="getImgPays(tab2[iMilieu])" class="previewImg" /></div><div @click="changeMilieu('droite')" class="btn">CLICK</div>
+        <div @click="changeHaut('gauche')" class="btn">CLICK</div><div class="col-2 choix choixL"><img :src="getImgPays(tab1[iHaut])" class="previewImg" /></div><div @click="changeHaut('droite')" class="btn">CLICK</div>
       </div>
       <h2>Les paysages de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
@@ -96,13 +90,13 @@ export default {
     return {
       jsonPhotos: myJSON,
       jsonPhotosSorted: [],
-      tab1: ["haut_montagne.png","haut_foret.png","haut_mer.png"],
-      tab2: ["milieu_montagne.png","milieu_foret.png","milieu_mer.png"],
-      tab3: ["bas_montagne.png","bas_foret.png","bas_mer.png"],
+      tab1: ["ciel1.png", "ciel2.png", "ciel3.png"],
+      tab2: ["milieu1.png", "milieu2.png", "milieu3.png","milieu4.png"],
+      tab3: ["bas1.png", "bas2.png", "bas3.png"],
       iBas: 0,
       iMilieu: 0,
       iHaut: 0,
-      ok: false
+      ok: false,
     };
   },
   mounted() {
@@ -120,6 +114,51 @@ export default {
     },
     getImgPays(img) {
       return require(`../assets/${img}`);
+    },
+    changeHaut(direction) {
+      if (direction === "gauche") {
+        if(this.iHaut === 0){
+          this.iHaut = 2
+        }else{
+          this.iHaut -= 1;
+        }
+      } else if (direction === "droite") {
+        if(this.iHaut === 2){
+          this.iHaut = 0
+        }else{
+          this.iHaut += 1;
+        }
+      }
+    },
+    changeMilieu(direction) {
+      if (direction === "gauche") {
+        if(this.iMilieu === 0){
+          this.iMilieu = 3
+        }else{
+          this.iMilieu -= 1;
+        }
+      } else if (direction === "droite") {
+        if(this.iMilieu === 3){
+          this.iMilieu = 0
+        }else{
+          this.iMilieu += 1;
+        }
+      }
+    },
+    changeBas(direction) {
+      if (direction === "gauche") {
+        if(this.iBas === 0){
+          this.iBas = 2
+        }else{
+          this.iBas -= 1;
+        }
+      } else if (direction === "droite") {
+        if(this.iBas === 2){
+          this.iBas = 0
+        }else{
+          this.iBas += 1;
+        }
+      }
     },
   },
 };
@@ -141,9 +180,9 @@ body {
   justify-content: center;
   font-size: 15px;
 }
-.mainCanvas{
+.mainCanvas {
   position: relative;
-  text-align:center;  
+  text-align: center;
   height: 50vh !important;
   margin-bottom: 30px;
 }
@@ -151,13 +190,19 @@ body {
   height: 100% !important;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
 }
-.choix{
+.choixL {
+  margin-left: 20px;
+}
+.previewImg{
+  width: 15vw;
   border: 1px solid black;
 }
-.choixL{
-  margin-left: 20px;
+.btn{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
 }
 .next {
   margin-left: 5%;
