@@ -50,9 +50,9 @@
         <img :src="getImgPays(tab3[iBas])" class="overlayImage" />
       </div>
       <div class="row">
-        <div @click="changeBas('gauche')" class="btn">CLICK</div><div class="col-2 choix"><img :src="getImgPays(tab3[iBas])" class="previewImg" /></div><div @click="changeBas('droite')" class="btn">CLICK</div>
-        <div @click="changeMilieu('gauche')" class="btn">CLICK</div><div class="col-2 choix choixL"><img :src="getImgPays(tab2[iMilieu])" class="previewImg" /></div><div @click="changeMilieu('droite')" class="btn">CLICK</div>
-        <div @click="changeHaut('gauche')" class="btn">CLICK</div><div class="col-2 choix choixL"><img :src="getImgPays(tab1[iHaut])" class="previewImg" /></div><div @click="changeHaut('droite')" class="btn">CLICK</div>
+        <div @click="changeBas('gauche')" class="btn"><img src="../assets/arrowLeft.png" class="arrow"/></div><div class="col-2 choix"><img :src="getImgPays(tab3[iBas])" class="previewImg" /></div><div @click="changeBas('droite')" class="btn"><img src="../assets/arrowRight.png" class="arrow"/></div>
+        <div @click="changeMilieu('gauche')" class="btn"><img src="../assets/arrowLeft.png" class="arrow arrowL"/></div><div class="col-2 choix choixL"><img :src="getImgPays(tab2[iMilieu])" class="previewImg" /></div><div @click="changeMilieu('droite')" class="btn"><img src="../assets/arrowRight.png" class="arrow"/></div>
+        <div @click="changeHaut('gauche')" class="btn"><img src="../assets/arrowLeft.png" class="arrow arrowL"/></div><div class="col-2 choix choixL"><img :src="getImgPays(tab1[iHaut])" class="previewImg" /></div><div @click="changeHaut('droite')" class="btn"><img src="../assets/arrowRight.png" class="arrow"/></div>
       </div>
       <h2>Les paysages de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
@@ -181,8 +181,9 @@ body {
   font-size: 15px;
 }
 .mainCanvas {
+  display: flex;
+  justify-content: center;
   position: relative;
-  text-align: center;
   height: 50vh !important;
   margin-bottom: 30px;
 }
@@ -190,10 +191,12 @@ body {
   height: 100% !important;
   position: absolute;
   top: 0;
-  left: 0;
 }
-.choixL {
-  margin-left: 20px;
+.arrow{
+  width: 4vw;
+}
+.arrowL{
+  margin-left: 30px;
 }
 .previewImg{
   width: 15vw;
