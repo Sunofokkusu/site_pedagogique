@@ -44,10 +44,10 @@
       </div>
       <h2>A toi de jouer!</h2>
       <p>Créer ton propre paysage en choisissant son contenu.</p>
-        <div class="mainCanvas">
-          <img src="../assets/haut_foret.png" class="overlayImage"/>
-          <img src="../assets/milieu_mer.png" class="overlayImage"/>
-          <img src="../assets/bas_montage.png" class="overlayImage"/>
+        <div v-if="ok" class="mainCanvas">
+          <img :src="getImgPays(tab1[iHaut])" class="overlayImage"/>
+          <img :src="getImgPays(tab2[iMilieu])" class="overlayImage"/>
+          <img :src="getImgPays(tab3[iBas])" class="overlayImage"/>
         </div>  
       <div class="row">
         <div class="col-2 choix">
@@ -99,9 +99,10 @@ export default {
       tab1: ["haut_montagne.png","haut_foret.png","haut_mer.png"],
       tab2: ["milieu_montagne.png","milieu_foret.png","milieu_mer.png"],
       tab3: ["bas_montagne.png","bas_foret.png","bas_mer.png"],
-      currentHaut: "",
-      currentMilieu:"",
-      currentBas:""
+      iBas: 0,
+      iMilieu: 0,
+      iHaut: 0,
+      ok: false
     };
   },
   mounted() {
@@ -111,13 +112,14 @@ export default {
         this.jsonPhotosSorted.push(photo);
       }
     });
-    this.currentHaut = this.tab1[0];
-    this.currentMilieu = this.tab2[0];
-    this.currentBas = this.tab3[0];
+    this.ok = true;
   },
   methods: {
     getImg(img) {
       return require(`../assets/photos/${img}`);
+    },
+    getImgPays(img) {
+      return require(`../assets/${img}`);
     },
   },
 };
