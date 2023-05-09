@@ -44,7 +44,7 @@
       <p>Dessine ton propre art abstrait.<br/>Couleur:&nbsp;<input type="color" v-model="color" /></p>
         <vue-drawing-canvas :width="widthCanva" :color="color" ref="VueCanvasDrawing" />
         <br/>
-      <button @click.prevent="$refs.VueCanvasDrawing.reset()">Supprimer</button>
+      <button @click.prevent="$refs.VueCanvasDrawing.reset()" style="cursor: pointer;">Supprimer</button>
       <h2>Les photos abstraites de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
