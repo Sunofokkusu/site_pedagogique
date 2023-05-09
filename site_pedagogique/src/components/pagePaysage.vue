@@ -44,6 +44,22 @@
       </div>
       <h2>A toi de jouer!</h2>
       <p>Créer ton propre paysage en choisissant son contenu.</p>
+        <div class="mainCanvas">
+          <img src="../assets/haut_foret.png" class="overlayImage"/>
+          <img src="../assets/milieu_mer.png" class="overlayImage"/>
+          <img src="../assets/bas_montage.png" class="overlayImage"/>
+        </div>  
+      <div class="row">
+        <div class="col-2 choix">
+          ici
+        </div>
+        <div class="col-2 choix choixL">
+          ici
+        </div>
+        <div class="col-2 choix choixL">
+          ici
+        </div>
+      </div>
       <h2>Les paysages de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
@@ -80,6 +96,12 @@ export default {
     return {
       jsonPhotos: myJSON,
       jsonPhotosSorted: [],
+      tab1: ["haut_montagne.png","haut_foret.png","haut_mer.png"],
+      tab2: ["milieu_montagne.png","milieu_foret.png","milieu_mer.png"],
+      tab3: ["bas_montagne.png","bas_foret.png","bas_mer.png"],
+      currentHaut: "",
+      currentMilieu:"",
+      currentBas:""
     };
   },
   mounted() {
@@ -89,6 +111,9 @@ export default {
         this.jsonPhotosSorted.push(photo);
       }
     });
+    this.currentHaut = this.tab1[0];
+    this.currentMilieu = this.tab2[0];
+    this.currentBas = this.tab3[0];
   },
   methods: {
     getImg(img) {
@@ -113,6 +138,24 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 15px;
+}
+.mainCanvas{
+  position: relative;
+  text-align:center;  
+  height: 50vh !important;
+  margin-bottom: 30px;
+}
+.overlayImage {
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.choix{
+  border: 1px solid black;
+}
+.choixL{
+  margin-left: 20px;
 }
 .next {
   margin-left: 5%;
