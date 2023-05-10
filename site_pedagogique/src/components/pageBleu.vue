@@ -164,7 +164,7 @@ body {
 }
 .violet{
   height: 20vh !important;
-  border: 1px solid pruple;
+  border: 1px solid black;
   margin-left: 20px;
   background-color: purple;
   margin-bottom: 30px;
