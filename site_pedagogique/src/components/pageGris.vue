@@ -32,18 +32,19 @@
       <div class="row">
         <div class="col-2">Guernica, de Pablo Picasso</div>
         <div class="col-2 img">L'arbre gris, de Piet Mondrian</div>
-        <div class="col-2 img">
-          Le cheval gris, de Théodore Géricault
-        </div>
-        <div class="col-2 img">
-          Girl in grey, de Louis Le Brocquy
-        </div>
-        <div class="col-2 img">
-          Maternité, de Nguyen Thanh Binh
-        </div>
+        <div class="col-2 img">Le cheval gris, de Théodore Géricault</div>
+        <div class="col-2 img">Girl in grey, de Louis Le Brocquy</div>
+        <div class="col-2 img">Maternité, de Nguyen Thanh Binh</div>
       </div>
       <h2>A toi de jouer!</h2>
-      
+      <p>
+        Le gris ne peux pas vraiment se mélanger avec d'autres couleurs...
+        Découvre plutôt certaines de ses nuances.
+      </p>
+      <div class="row">
+        <div class="col-2 nuanceGris"></div>
+      </div>
+      <button class="boutton" @click="changeGris">Suivante</button>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -57,24 +58,42 @@
       </div>
     </div>
     <div class="navigation">
-      <span class="prev" @click="this.$router.push({ name: 'pageNoir' })">◀ Noir</span>
-      <span class="next" @click="this.$router.push({ name: 'pageJaune' })">Jaune ▶</span>
+      <span class="prev" @click="this.$router.push({ name: 'pageNoir' })"
+        >◀ Noir</span
+      >
+      <span class="next" @click="this.$router.push({ name: 'pageJaune' })"
+        >Jaune ▶</span
+      >
     </div>
-    <footerPage/>
+    <footerPage />
   </div>
 </template>
 
 <script>
 import headerPage from "@/components/headerPages.vue";
-import footerPage from '@/components/footerPage.vue';
+import footerPage from "@/components/footerPage.vue";
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pageGris",
-  components: { headerPage,footerPage },
+  components: { headerPage, footerPage },
   data() {
     return {
       jsonPhotos: myJSON,
       jsonPhotosSorted: [],
+      nuances: [
+        "#606060",
+        "#5A5E6B",
+        "#C0C0C0",
+        "#BABABA",
+        "#C7D0CC",
+        "#696969",
+        "#677179",
+        "#848484",
+        "#AFAFAF",
+        "#CECECE",
+        "#7F7F7F",
+      ],
+      index: 0,
     };
   },
   mounted() {
@@ -84,10 +103,20 @@ export default {
         this.jsonPhotosSorted.push(photo);
       }
     });
+    document.querySelector(".nuanceGris").style.backgroundColor = this.nuances[this.index]
   },
   methods: {
     getImg(img) {
       return require(`../assets/photos/${img}`);
+    },
+    changeGris() {
+      if (this.index === 10) {
+        this.index = 0;
+        document.querySelector(".nuanceGris").style.backgroundColor = this.nuances[this.index]
+      } else {
+        this.index += 1;
+        document.querySelector(".nuanceGris").style.backgroundColor = this.nuances[this.index]
+      }
     },
   },
 };
@@ -109,10 +138,17 @@ body {
   justify-content: center;
   font-size: 15px;
 }
+.nuanceGris {
+  height: 20vh !important;
+  border: 1px solid black;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 .next {
   margin-left: 5%;
 }
-.next,.prev{
+.next,
+.prev {
   cursor: pointer;
 }
 </style>
