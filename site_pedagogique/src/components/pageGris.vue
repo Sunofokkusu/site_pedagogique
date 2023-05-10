@@ -46,6 +46,7 @@
       </div>
       <div class="nomG"></div>
       <button class="boutton" @click="changeGris">Suivante</button>
+      <h2>Les photos grises de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />

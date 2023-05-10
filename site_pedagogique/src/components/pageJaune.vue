@@ -61,6 +61,7 @@
         </div>
         <button @click="reset" class="boutton">Retour au choix des couleurs</button>
       </div>
+      <h2>Les photos jaunes de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
