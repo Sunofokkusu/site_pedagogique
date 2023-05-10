@@ -38,7 +38,7 @@
       </div>
       <h2>A toi de jouer!</h2>
       <p>
-        Le gris ne peux pas vraiment se mélanger avec d'autres couleurs...
+        Le gris ne peut pas vraiment se mélanger avec d'autres couleurs...
         Découvre plutôt certaines de ses nuances.
       </p>
       <div class="row">
