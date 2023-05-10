@@ -152,20 +152,15 @@ body {
   margin-bottom: 10px;
   background-color: yellow;
 }
-.jaun{
-  margin-left: 20px;
-}
 .bleuC{
   height: 20vh !important;
   border: 1px solid black;
-  margin-left: 20px;
   background-color: lightblue;
   margin-bottom: 30px;
 }
 .violet{
   height: 20vh !important;
   border: 1px solid black;
-  margin-left: 20px;
   background-color: purple;
   margin-bottom: 30px;
 }

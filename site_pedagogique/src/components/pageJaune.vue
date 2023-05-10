@@ -149,6 +149,7 @@ body {
   border: 1px solid black;
   margin-bottom: 30px;
   background-color: yellow;
+  margin-left: 20px;
 }
 .white{
   height: 20vh !important;
@@ -171,21 +172,18 @@ body {
 .jauneC{
   height: 20vh !important;
   border: 1px solid black;
-  margin-left: 20px;
   background-color: lightyellow;
   margin-bottom: 30px;
 }
 .vert{
   height: 20vh !important;
   border: 1px solid black;
-  margin-left: 20px;
   background-color: green;
   margin-bottom: 30px;
 }
 .orange{
   height: 20vh !important;
   border: 1px solid black;
-  margin-left: 20px;
   background-color: orange;
   margin-bottom: 30px;
 }
