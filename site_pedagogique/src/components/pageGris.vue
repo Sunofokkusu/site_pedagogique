@@ -42,8 +42,9 @@
         Découvre plutôt certaines de ses nuances.
       </p>
       <div class="row">
-        <div class="col-2 nuanceGris"></div>
+        <div class="col-4 nuanceGris"></div>
       </div>
+      <div class="nomG"></div>
       <button class="boutton" @click="changeGris">Suivante</button>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
@@ -85,13 +86,32 @@ export default {
         "#5A5E6B",
         "#C0C0C0",
         "#BABABA",
-        "#C7D0CC",
-        "#696969",
+        "#EDEDED",
+        "#AFAFAF",
+        "#303030",
         "#677179",
         "#848484",
-        "#AFAFAF",
         "#CECECE",
-        "#7F7F7F",
+        "#9E9E9E",
+        "#CCCCCC",
+        "#798081",
+        "#D3D3D3"
+      ],
+      noms: [
+        "Gris",
+        "Ardoise",
+        "Argent",
+        "Etain oxydé",
+        "Etain pur",
+        "Gris acier",
+        "Gris anthracite",
+        "Gris de payne",
+        "Gris fer",
+        "Gris perle",
+        "Gris souris",
+        "Pinchard",
+        "Plomb",
+        "Gris clair"
       ],
       index: 0,
     };
@@ -103,19 +123,25 @@ export default {
         this.jsonPhotosSorted.push(photo);
       }
     });
-    document.querySelector(".nuanceGris").style.backgroundColor = this.nuances[this.index]
+    document.querySelector(".nuanceGris").style.backgroundColor =
+      this.nuances[this.index];
+    document.querySelector(".nomG").innerHTML = this.noms[this.index];
   },
   methods: {
     getImg(img) {
       return require(`../assets/photos/${img}`);
     },
     changeGris() {
-      if (this.index === 10) {
+      if (this.index === 13) {
         this.index = 0;
-        document.querySelector(".nuanceGris").style.backgroundColor = this.nuances[this.index]
+        document.querySelector(".nuanceGris").style.backgroundColor =
+          this.nuances[this.index];
+        document.querySelector(".nomG").innerHTML = this.noms[this.index];
       } else {
         this.index += 1;
-        document.querySelector(".nuanceGris").style.backgroundColor = this.nuances[this.index]
+        document.querySelector(".nuanceGris").style.backgroundColor =
+          this.nuances[this.index];
+        document.querySelector(".nomG").innerHTML = this.noms[this.index];
       }
     },
   },
@@ -141,8 +167,10 @@ body {
 .nuanceGris {
   height: 20vh !important;
   border: 1px solid black;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.nomG{
+  margin-bottom: 5px;
 }
 .next {
   margin-left: 5%;
