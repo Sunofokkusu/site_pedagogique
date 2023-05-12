@@ -43,7 +43,7 @@
         <div class="col-2 img">L’Estaque, de André Derain</div>
       </div>
       <h2>A toi de jouer!</h2>
-      <p>Créer ton propre paysage en choisissant son contenu.</p>
+      <p>Crée  ton propre paysage en choisissant son contenu.</p>
       <div v-if="ok" class="mainCanvas">
         <img :src="getImgPays(tab1[iHaut])" class="overlayImage" />
         <img :src="getImgPays(tab2[iMilieu])" class="overlayImage" />
