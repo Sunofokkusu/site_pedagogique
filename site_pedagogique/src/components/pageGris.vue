@@ -10,23 +10,23 @@
       <div class="row">
         <img
           class="col-2"
-          src="https://static.nationalgeographic.fr/files/styles/image_3200/public/Main_Guernica_BAT-10313.jpg"
+          src="../assets/exemples/guernica.jpg"
         />
         <img
           class="col-2 img"
-          src="http://ekladata.com/Nv41TVr_--zDZr98vW2ryfWRr3c@600x444.jpg"
+          src="../assets/exemples/arbre.jpg"
         />
         <img
           class="col-2 img"
-          src="http://ekladata.com/Xbb0rKSjxGGGuoCd5_MO30KMsj0@600x486.jpg"
+          src="../assets/exemples/cheval.jpg"
         />
         <img
           class="col-2 img"
-          src="http://ekladata.com/emO9BoDzcGYLTxm3H3xGwRyCC-s.jpg"
+          src="../assets/exemples/girl.jpg"
         />
         <img
           class="col-2 img"
-          src="http://ekladata.com/bjwBXqPz6xBtEDpoyg9jre3ARJY.jpg"
+          src="../assets/exemples/maternite.jpg"
         />
       </div>
       <div class="row">

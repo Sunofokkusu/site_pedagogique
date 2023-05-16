@@ -13,23 +13,23 @@
       <div class="row">
         <img
           class="col-2"
-          src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-la-joconde-leonard-de-vinci-260x387.jpg"
+          src="../assets/exemples/joconde.jpg"
         />
         <img
           class="col-2 img"
-          src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-autoportrait-a-loreille-vincent-van-gogh-688x836.jpg"
+          src="../assets/exemples/oreille.jpg"
         />
         <img
           class="col-2 img"
-          src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-la-jeune-fille-a-la-perle-johannes-vermeer-688x815.jpg"
+          src="../assets/exemples/perle.jpg"
         />
         <img
           class="col-2 img"
-          src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-portrait-dadele-bloch-bauer-klimt-600x600.jpg"
+          src="../assets/exemples/portait.jpg"
         />
         <img
           class="col-2 img"
-          src="https://www.theartcycle.fr/blog/assets/images/the-art-cycle-lart-du-portrait-afghane-aux-yeux-vert-steve-mccurry-688x1032.jpg"
+          src="../assets/exemples/yeux.jpg"
         />
       </div>
       <div class="row">

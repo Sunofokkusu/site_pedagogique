@@ -12,23 +12,23 @@
       <div class="row">
         <img
           class="col-2"
-          src="https://blog.artsper.com/wp-content/uploads/2016/03/matisse_calice.jpg"
+          src="../assets/exemples/voile.jpg"
         />
         <img
           class="col-2 img"
-          src="https://www.franko-b.com/Black_Paintings_files/vlb_images0/fb024.jpg"
+          src="../assets/exemples/black.jpg"
         />
         <img
           class="col-2 img"
-          src="https://blog.artsper.com/wp-content/uploads/2016/03/mark-rothko-no-.7-1964.jpg"
+          src="../assets/exemples/n6.jpg"
         />
         <img
           class="col-2 img"
-          src="https://blog.artsper.com/wp-content/uploads/2016/03/soulages.jpeg"
+          src="../assets/exemples/peinture.jpeg"
         />
         <img
           class="col-2 img"
-          src="https://images.e-flux-systems.com/137606_a4c64c78b5e53858d2c54b1d76114472.jpg,828"
+          src="../assets/exemples/rotterdam.png"
         />
       </div>
       <div class="row">

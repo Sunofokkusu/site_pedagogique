@@ -11,23 +11,23 @@
       <div class="row">
         <img
           class="col-2"
-          src="https://perezartsplastiques.files.wordpress.com/2017/09/n00544_10.jpg"
+          src="../assets/exemples/ball.jpg"
         />
         <img
           class="col-2 img"
-          src="https://perezartsplastiques.files.wordpress.com/2017/09/douze.jpg"
+          src="../assets/exemples/tournesols.jpg"
         />
         <img
           class="col-2 img"
-          src="https://perezartsplastiques.files.wordpress.com/2017/09/abf89ec794471712162f236bfe0eaee2.jpg"
+          src="../assets/exemples/phare.jpg"
         />
         <img
           class="col-2 img"
-          src="https://perezartsplastiques.files.wordpress.com/2017/09/tumblr_m75d71r7bw1qbo39mo1_1280.jpg"
+          src="../assets/exemples/baiser.jpg"
         />
         <img
           class="col-2 img"
-          src="https://perezartsplastiques.files.wordpress.com/2017/09/mark_rothko.jpg"
+          src="../assets/exemples/jaune.jpg"
         />
       </div>
       <div class="row">

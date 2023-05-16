@@ -11,23 +11,23 @@
       <div class="row">
         <img
           class="col-2"
-          src="https://www.artmajeur.com/media/cache/resolve/standard/o/l/olimpia-gaia-martinelli/blog/15504022-blueday.jpg"
+          src="../assets/exemples/jour.jpg"
         />
         <img
           class="col-2 img"
-          src="https://www.artmajeur.com/media/cache/resolve/standard/o/l/olimpia-gaia-martinelli/blog/15572881-dsc-0001.jpg"
+          src="../assets/exemples/eleve.jpg"
         />
         <img
           class="col-2 img"
-          src="https://www.artmajeur.com/media/cache/resolve/standard/o/l/olimpia-gaia-martinelli/blog/15535954-7ee2fe3cfdceea977ad88356506c359.jpg"
+          src="../assets/exemples/perception.jpg"
         />
         <img
           class="col-2 img"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/1200px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg"
+          src="../assets/exemples/self.jpg"
         />
         <img
           class="col-2 img"
-          src="https://www.vangoghgallery.com/img/starry_night_full.jpg"
+          src="../assets/exemples/starry.jpg"
         />
       </div>
       <div class="row">

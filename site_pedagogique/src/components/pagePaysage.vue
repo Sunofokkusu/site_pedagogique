@@ -12,23 +12,23 @@
       <div class="row">
         <img
           class="col-2"
-          src="https://blog.artsper.com/wp-content/uploads/2020/07/la_nuit_etoilee.jpg"
+          src="../assets/exemples/nuit.jpg"
         />
         <img
           class="col-2 img"
-          src="https://www.kazoart.com/blog/wp-content/uploads/2017/06/etretat-monet.jpg"
+          src="../assets/exemples/soleil.jpg"
         />
         <img
           class="col-2 img"
-          src="https://blog.artsper.com/wp-content/uploads/2021/01/Caspar-David-Friedrich-Monk-by-the-Sea-1808-10-768x488.jpg"
+          src="../assets/exemples/moine.png"
         />
         <img
           class="col-2 img"
-          src="https://blog.artsper.com/wp-content/uploads/2020/07/canaletto_vue_salute_depuis_grand_canal_mb_a.jpg"
+          src="../assets/exemples/canal.jpg"
         />
         <img
           class="col-2 img"
-          src="https://blog.artsper.com/wp-content/uploads/2020/07/6b9a06102c943f440bd5af2f857347d2.jpg"
+          src="../assets/exemples/estaque.jpg"
         />
       </div>
       <div class="row">

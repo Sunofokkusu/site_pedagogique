@@ -12,23 +12,23 @@
       <div class="row">
         <img
           class="col-2"
-          src="https://blog.artsper.com/wp-content/uploads/2018/12/1-644x532.jpg"
+          src="../assets/exemples/sanstitre.jpg"
         />
         <img
           class="col-2 img"
-          src="https://blog.artsper.com/wp-content/uploads/2018/12/mehretu_congress-644x485.jpg"
+          src="../assets/exemples/congress.jpg"
         />
         <img
           class="col-2 img"
-          src="https://blog.artsper.com/wp-content/uploads/2018/12/Gerhard-Richter-Abstraktes-Bild-946-3.jpg"
+          src="../assets/exemples/abstract.jpg"
         />
         <img
           class="col-2 img"
-          src="https://www.piet-mondrian.org/images/paintings/composition-II-in-red-blue-and-yellow.jpg"
+          src="../assets/exemples/composition.jpg"
         />
         <img
           class="col-2 img"
-          src="https://blog.artsper.com/wp-content/uploads/2018/12/T14081_10-644x506.jpg"
+          src="../assets/exemples/cytwombly.jpg"
         />
       </div>
       <div class="row">
