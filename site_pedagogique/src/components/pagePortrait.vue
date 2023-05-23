@@ -11,26 +11,11 @@
       </p>
       <h2>Les portraits connus dans l'art</h2>
       <div class="row">
-        <img
-          class="col-2"
-          src="../assets/exemples/joconde.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/oreille.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/perle.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/portait.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/yeux.jpg"
-        />
+        <img class="col-2" src="../assets/exemples/joconde.jpg" />
+        <img class="col-2 img" src="../assets/exemples/oreille.jpg" />
+        <img class="col-2 img" src="../assets/exemples/perle.jpg" />
+        <img class="col-2 img" src="../assets/exemples/portait.jpg" />
+        <img class="col-2 img" src="../assets/exemples/yeux.jpg" />
       </div>
       <div class="row">
         <div class="col-2">La Joconde, de Léonard de Vinci</div>
@@ -46,7 +31,10 @@
         <div class="col-2 img">L’afghane aux yeux verts, de Steve McCurry</div>
       </div>
       <h2>A toi de jouer!</h2>
-      <p>Place toi devant la caméra pour voir ton portrait (si rien ne s'affiche, autorise l'accès à la caméra au navigateur).</p>
+      <p>
+        Place toi devant la caméra pour voir ton portrait (si rien ne s'affiche,
+        autorise l'accès à la caméra au navigateur).
+      </p>
       <video id="webcam" autoplay></video>
       <h2>Les portraits de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
@@ -104,9 +92,14 @@ export default {
           setInterval(() => {
             const video = document.getElementById("webcam");
             const canvas = document.createElement("canvas");
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            canvas.getContext("2d").drawImage(video, 0, 0);})
+            if (video) {
+              canvas.width = video.videoWidth;
+              canvas.height = video.videoHeight;
+              canvas.getContext("2d").drawImage(video, 0, 0);
+            }else{
+              stream.getVideoTracks()[0].stop();
+            }
+          });
         };
       })
       .catch((err) => {
@@ -151,7 +144,7 @@ body {
 .prev {
   cursor: pointer;
 }
-#webcam{
+#webcam {
   width: 90%;
   margin-left: 20px;
   margin-right: 20px;
