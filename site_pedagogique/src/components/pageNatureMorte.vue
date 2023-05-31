@@ -4,28 +4,28 @@
       <div class="corps">
         <h2>Qu'est ce qu'une nature morte?</h2>
         <p class="def">
-
+          C'est une représentation d'objets inanimés placés d'une certaine manière avec l'intention de faire passer un message.
         </p>
         <h2>Les natures mortes connues dans l'art</h2>
         <div class="row">
-          <img class="col-2" src="../assets/exemples/joconde.jpg" />
-          <img class="col-2 img" src="../assets/exemples/oreille.jpg" />
-          <img class="col-2 img" src="../assets/exemples/perle.jpg" />
-          <img class="col-2 img" src="../assets/exemples/portait.jpg" />
-          <img class="col-2 img" src="../assets/exemples/yeux.jpg" />
+          <img class="col-2" src="../assets/exemples/fede.jpg" />
+          <img class="col-2 img" src="../assets/exemples/asperges.jpg" />
+          <img class="col-2 img" src="../assets/exemples/pommes.jpg" />
+          <img class="col-2 img" src="../assets/exemples/fruits.jpg" />
+          <img class="col-2 img" src="../assets/exemples/crane.jpg" />
         </div>
         <div class="row">
-          <div class="col-2">La Joconde, de Léonard de Vinci</div>
+          <div class="col-2">Nature morte, de Fede Galizia</div>
           <div class="col-2 img">
-            Autoportrait à l’oreille, de Vincent Van Gogh
+            Une botte d’Asperges, de Edouard Manet
           </div>
           <div class="col-2 img">
-            La jeune fille à la perle, de Johannes Vermeer
+            Le Panier de Pommes, de Paul Cézanne
           </div>
           <div class="col-2 img">
-            Portrait d’Adele Bloch Bauer I, de Gustav Klimt
+            Nature Morte aux fruits dans des porcelaines, de Jacob Van Es
           </div>
-          <div class="col-2 img">L’afghane aux yeux verts, de Steve McCurry</div>
+          <div class="col-2 img">La Nature Morte au Crâne, de Paul Cézanne</div>
         </div>
         <h2>A toi de jouer!</h2>
         <h2>Les natures mortes de l'exposition</h2>
