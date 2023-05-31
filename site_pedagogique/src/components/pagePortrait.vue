@@ -72,13 +72,16 @@ export default {
     return {
       jsonPhotos: myJSON,
       jsonPhotosSorted: [],
+      jsonPhotosSortedActivite: []
     };
   },
   mounted() {
     window.scroll(0, 0);
     this.jsonPhotos.photographies.forEach((photo) => {
-      if (photo.theme === "portrait") {
+      if (photo.theme === "portrait" && photo.activite === "non") {
         this.jsonPhotosSorted.push(photo);
+      }else if (photo.theme === "portrait" && photo.activite === "oui") {
+        this.jsonPhotosSortedActivite.push(photo);
       }
     });
     navigator.mediaDevices

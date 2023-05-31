@@ -103,6 +103,7 @@ export default {
     return {
       jsonPhotos: myJSON,
       jsonPhotosSorted: [],
+      jsonPhotosSortedActivite: [],
       tab1: ["ciel1.png", "ciel2.png", "ciel3.png"],
       tab2: ["milieu1.png", "milieu2.png", "milieu3.png", "milieu4.png"],
       tab3: ["bas1.png", "bas2.png", "bas3.png"],
@@ -115,8 +116,10 @@ export default {
   mounted() {
     window.scroll(0, 0);
     this.jsonPhotos.photographies.forEach((photo) => {
-      if (photo.theme === "paysage") {
+      if (photo.theme === "paysage" && photo.activite === "non") {
         this.jsonPhotosSorted.push(photo);
+      }else if (photo.theme === "paysage" && photo.activite === "oui"){
+        this.jsonPhotosSortedActivite.push(photo);
       }
     });
     this.ok = true;
