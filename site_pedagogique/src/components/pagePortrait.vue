@@ -50,8 +50,8 @@
       </div>
     </div>
     <div class="navigation">
-      <span class="prev" @click="this.$router.push({ name: 'pageAbstrait' })"
-        >◀ Abstrait</span
+      <span class="prev" @click="this.$router.push({ name: 'pageNatureMorte' })"
+        >◀ Nature morte</span
       >
       <span class="next" @click="this.$router.push({ name: 'pagePaysage' })"
         >Paysages ▶</span

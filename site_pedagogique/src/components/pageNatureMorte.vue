@@ -45,8 +45,8 @@
         <span class="prev" @click="this.$router.push({ name: 'pageAbstrait' })"
           >◀ Abstrait</span
         >
-        <span class="next" @click="this.$router.push({ name: 'pagePaysage' })"
-          >Paysages ▶</span
+        <span class="next" @click="this.$router.push({ name: 'pagePortrait' })"
+          >Portait ▶</span
         >
       </div>
       <footerPage />
