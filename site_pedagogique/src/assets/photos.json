@@ -1,13 +1,104 @@
 {
   "photographies": [
     {
-      "chemin": "hivernies.png",
-      "nom": "Hivernies",
-      "photographe": "Patrick BOGNER",
+      "chemin": "nuit_dorages.jpg",
+      "nom": "Nuit d'orages",
+      "photographe": "Frantiek ZVARDON",
       "descriptionTheme": "",
       "descriptionCouleur": "",
       "theme": "paysage",
-      "couleur": "gris"
+      "couleur": "jaune",
+      "activite": "non"
+    },
+    {
+      "chemin": "les_ballons.png",
+      "nom": "Les ballons",
+      "photographe": "Bernard FAUCON",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "paysage",
+      "couleur": "bleu",
+      "activite": "non"
+    },
+    {
+      "chemin": "circle_of_water.jpg",
+      "nom": "Circle of water",
+      "photographe": "Michael KENNA",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "paysage",
+      "couleur": "gris",
+      "activite": "non"
+    },
+    {
+      "chemin": "les_herbes.jpg",
+      "nom": "Les herbes",
+      "photographe": "Patrick BAILLY-MAÎTRE-GRAND",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "paysage",
+      "couleur": "noir",
+      "activite": "non"
+    },
+    {
+      "chemin": "bayle4.jpg",
+      "nom": "Bayle",
+      "photographe": "François BOUTAUD",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "paysage",
+      "couleur": "gris",
+      "activite": "oui"
+    },
+    {
+      "chemin": "faille_entre_lieux_et_non_lieux.jpg",
+      "nom": "Failles, entre lieux et non-lieux",
+      "photographe": "Franck POURCEL",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "paysage",
+      "couleur": "blanc",
+      "activite": "non"
+    },
+    {
+      "chemin": "je_fixerai_des_vertiges.jpg",
+      "nom": "Je fixerai des vertiges",
+      "photographe": "Georges PACHECO",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "paysage",
+      "couleur": "bleu",
+      "activite": "non"
+    },
+    {
+      "chemin": "je_fixerai_des_vertiges2.jpg",
+      "nom": "Je fixerai des vertiges",
+      "photographe": "Georges PACHECO",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "paysage",
+      "couleur": "jaune",
+      "activite": "oui"
+    },
+    {
+      "chemin": "LVIV3.jpg",
+      "nom": "LVIV",
+      "photographe": "Viacheslav POLIAKOV",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "paysage",
+      "couleur": "jaune",
+      "activite": "non"
+    },
+    {
+      "chemin": "i_am_folding_the_land.jpg",
+      "nom": "I am folding the land",
+      "photographe": "Catherine CATTARUZZA",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "paysage",
+      "couleur": "jaune",
+      "activite": "oui"
     },
     {
       "chemin": "bayle.png",
@@ -15,71 +106,139 @@
       "photographe": "François BOUTAUD",
       "descriptionTheme": "",
       "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "noir"
+      "theme": "portrait",
+      "couleur": "noir",
+      "activite": "non"
     },
     {
-      "chemin": "IAmFoldingTheLand.png",
-      "nom": "I Am Folding the Land",
-      "photographe": "Catherine CATTARUZZA",
-      "descriptionTheme": "",
-      "descriptionCouleur": "Sur la partie gauche, on peut voir une couleur issue d'un mélange avec du jaune, sauras-tu reconnaitre avec quelle couleur le mélange a été réalisé?",
-      "theme": "paysage",
-      "couleur": "jaune"
-    },
-    {
-      "chemin": "khamseen.png",
-      "nom": "Khamseen",
-      "photographe": "Leah DESMOUSSEAUX",
+      "chemin": "bayle3.jpg",
+      "nom": "Bayle",
+      "photographe": "François BOUTAUD",
       "descriptionTheme": "",
       "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "gris"
+      "theme": "portrait",
+      "couleur": "gris",
+      "activite": "non"
     },
     {
-      "chemin": "laMainInvisible.png",
-      "nom": "La Main invisible",
-      "photographe": "Thierry FOURNIER",
+      "chemin": "sleepless_country.jpg",
+      "nom": "Sleepless country",
+      "photographe": "Adrienne SUPRENANT",
       "descriptionTheme": "",
       "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "bleu"
+      "theme": "portrait",
+      "couleur": "noir",
+      "activite": "oui"
     },
     {
-      "chemin": "nonLieu.png",
-      "nom": "Non-Lieu",
-      "photographe": "Thierry FOURNIER",
+      "chemin": "LVIV.jpg",
+      "nom": "LVIV",
+      "photographe": "Viacheslav POLIAKOV",
       "descriptionTheme": "",
       "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "gris"
+      "theme": "portrait",
+      "couleur": "jaune",
+      "activite": "oui"
     },
     {
-      "chemin": "portraitOfALandscape.png",
-      "nom": "Portrait of a landscape",
-      "photographe": "Pierre-Philippe HOFMANN",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "gris"
-    },
-    {
-      "chemin": "intersection.png",
-      "nom": "Intersection",
-      "photographe": "Mélanie-Jane FREY",
+      "chemin": "LVIV4.jpg",
+      "nom": "LVIV",
+      "photographe": "Viacheslav POLIAKOV",
       "descriptionTheme": "",
       "descriptionCouleur": "",
       "theme": "abstrait",
-      "couleur": "bleu"
+      "couleur": "jaune",
+      "activite": "non"
     },
     {
-      "chemin": "eresUnaMaravilla.png",
+      "chemin": "LVIV5.png",
+      "nom": "LVIV",
+      "photographe": "Viacheslav POLIAKOV",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "abstrait",
+      "couleur": "jaune",
+      "activite": "non"
+    },
+    {
+      "chemin": "grottes_du_trou_noir.jpg",
+      "nom": "Grotte du trou noir",
+      "photographe": "François DENIS",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "abstrait",
+      "couleur": "noir",
+      "activite": "non"
+    },
+    {
+      "chemin": "space.png",
+      "nom": "Space",
+      "photographe": "",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "abstrait",
+      "couleur": "bleu",
+      "activite": "non"
+    },
+    {
+      "chemin": "oneiros.jpg",
+      "nom": "Oneiros",
+      "photographe": "Armelle TULUNDA",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "abstrait",
+      "couleur": "noir",
+      "activite": "non"
+    },
+    {
+      "chemin": "sur_la_terre_comme_au_ciel.jpg",
+      "nom": "Sur la terre comme au ciel",
+      "photographe": "Armelle TULUNDA",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "abstrait",
+      "couleur": "noir",
+      "activite": "non"
+    },
+    {
+      "chemin": "eres_una_maravilla.png",
       "nom": "Eres una maravilla",
       "photographe": "Magali LAMBERT",
       "descriptionTheme": "",
       "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "noir"
+      "theme": "natureMorte",
+      "couleur": "noir",
+      "activite": "non"
+    },
+    {
+      "chemin": "LVIV6.jpg",
+      "nom": "LVIV",
+      "photographe": "Viacheslav POLIAKOV",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "natureMorte",
+      "couleur": "bleu",
+      "activite": "non"
+    },
+    {
+      "chemin": "LVIV2.jpg",
+      "nom": "LVIV",
+      "photographe": "Viacheslav POLIAKOV",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "natureMorte",
+      "couleur": "bleu",
+      "activite": "non"
+    },
+    {
+      "chemin": "on_street.png",
+      "nom": "On street",
+      "photographe": "",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "natureMorte",
+      "couleur": "jaune",
+      "activite": "non"
     },
     {
       "chemin": "ostende.png",
@@ -87,233 +246,129 @@
       "photographe": "Yvon LAMBERT",
       "descriptionTheme": "",
       "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "gris"
+      "theme": "natureMorte",
+      "couleur": "blanc",
+      "activite": "non"
     },
     {
-      "chemin": "pleasuresAndTerrorsOfLevitationII.png",
-      "nom": "Pleasures and Terrors of Levitation II",
-      "photographe": "François LAXALT",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "gris"
-    },
-    {
-      "chemin": "uneRespirationDeCombat.png",
-      "nom": "Une Respiration de combat",
-      "photographe": "Elli LORZ",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "portrait",
-      "couleur": "noir"
-    },
-    {
-      "chemin": "identitesDeChantier.png",
-      "nom": "Identités en chantier",
-      "photographe": "Elli LORZ",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "bleu"
-    },
-    {
-      "chemin": "prisesDeVie.png",
-      "nom": "Prises de vie",
-      "photographe": "Françoise SAUR",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "portrait",
-      "couleur": "gris"
-    },
-    {
-      "chemin": "lesMauvaisesHerbes.png",
-      "nom": "Les mauvaises herbes",
-      "photographe": "Anaïs ONDET",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "portrait",
-      "couleur": "noir"
-    },
-    {
-      "chemin": "jeFixeraiDesVertiges.png",
-      "nom": "Je fixerai des vertiges",
-      "photographe": "Georges PACHECO",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "portrait",
-      "couleur": "noir"
-    },
-    {
-      "chemin": "danseAvecLaTerre.png",
-      "nom": "Danse avec la Terre . RONDO",
-      "photographe": "Jakub PAJEWSKI",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "noir"
-    },
-    {
-      "chemin": "faillesEntreLieuxEtNonLieux.png",
-      "nom": "Failles, entre lieux et non-lieux",
-      "photographe": "Franck POURCEL",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "bleu"
-    },
-    {
-      "chemin": "travauxDesChamps.png",
-      "nom": "Travaux des champs",
-      "photographe": "Myriam RICHARD",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "portrait",
-      "couleur": "bleu"
-    },
-    {
-      "chemin": "sleeplessCountry.png",
-      "nom": "Sleepless country",
-      "photographe": "Adrienne SURPRENANT",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "portrait",
-      "couleur": "noir"
-    },
-    {
-      "chemin": "kar.png",
-      "nom": "քար [k’ar]",
-      "photographe": "Sarkis TOROSSIAN",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "gris"
-    },
-    {
-      "chemin": "oneiros.png",
-      "nom": "Óneiros",
-      "photographe": "Armelle TULUNDA",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "noir"
-    },
-    {
-      "chemin": "surLaTerreCommeAuCiel.png",
-      "nom": "Sur la terre comme au ciel",
-      "photographe": "Armelle TULUNDA",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "noir"
-    },
-    {
-      "chemin": "samedi25avril.png",
-      "nom": "Samedi 25 avril 2015, 13 heures",
-      "photographe": "Joël VAN AUDENHAEGE",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "noir"
-    },
-    {
-      "chemin": "MasaoYAMAMOTO.png",
+      "chemin": "",
       "nom": "",
-      "photographe": "Masao YAMAMOTO",
+      "photographe": "",
       "descriptionTheme": "",
       "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "noir"
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
     },
     {
-      "chemin": "FrançoisTUEFFERD.png",
+      "chemin": "",
       "nom": "",
-      "photographe": "François TUEFFERD",
+      "photographe": "",
       "descriptionTheme": "",
       "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "noir"
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
     },
     {
-      "chemin": "onStreet.png",
-      "nom": "On street",
-      "photographe": "Igor EFIMOV",
-      "descriptionTheme": "",
-      "descriptionCouleur": "Les raisins sur la table sont verts, quelle couleur faut-il ajouter au jaune pour obtenir du vert?",
-      "theme": "portrait",
-      "couleur": "jaune"
-    },
-    {
-      "chemin": "calmWaters.png",
-      "nom": "Calm Waters",
-      "photographe": "Andriy LOMAKIN",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "gris"
-    },
-    {
-      "chemin": "space.png",
-      "nom": "Space",
-      "photographe": "Yulia CHERVISNKA",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "bleu"
-    },
-    {
-      "chemin": "grandmothersOnTheEdgeOfHeaven.png",
-      "nom": "Grandmothers on the Edge of Heaven",
-      "photographe": "Elena SUBACH",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "portrait",
-      "couleur": "bleu"
-    },
-    {
-      "chemin": "LVIV.png",
-      "nom": "LVIV——GOD’S WILL",
-      "photographe": "Viacheslav POLIAKOV",
-      "descriptionTheme": "",
-      "descriptionCouleur": "Les couleurs de cette image sont le jaune et le bleu. Quelle couleur obtient-on après les avoir mélangés?",
-      "theme": "portrait",
-      "couleur": "jaune"
-    },
-    {
-      "chemin": "inspiration4.png",
-      "nom": "Inspiration 4",
-      "photographe": "Émilie SALQUÈBRE",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "abstrait",
-      "couleur": "gris"
-    },
-    {
-      "chemin": "nosPaysagesInterieurs.png",
-      "nom": "Nos paysages intérieurs",
-      "photographe": "Valentine ZELER",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "noir"
-    },
-    {
-      "chemin": "ThiloSEIDEL.png",
+      "chemin": "",
       "nom": "",
-      "photographe": "Thilo SEIDEL",
+      "photographe": "",
       "descriptionTheme": "",
       "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "noir"
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
     },
     {
-      "chemin": "Anne-sophieCOSTENOBLE.png",
+      "chemin": "",
       "nom": "",
-      "photographe": "Anne-sophie COSTENOBLE",
+      "photographe": "",
       "descriptionTheme": "",
       "descriptionCouleur": "",
-      "theme": "paysage",
-      "couleur": "noir"
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
+    },
+    {
+      "chemin": "",
+      "nom": "",
+      "photographe": "",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
+    },
+    {
+      "chemin": "",
+      "nom": "",
+      "photographe": "",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
+    },
+    {
+      "chemin": "",
+      "nom": "",
+      "photographe": "",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
+    },
+    {
+      "chemin": "",
+      "nom": "",
+      "photographe": "",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
+    },
+    {
+      "chemin": "",
+      "nom": "",
+      "photographe": "",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
+    },
+    {
+      "chemin": "",
+      "nom": "",
+      "photographe": "",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
+    },
+    {
+      "chemin": "",
+      "nom": "",
+      "photographe": "",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
+    },
+    {
+      "chemin": "",
+      "nom": "",
+      "photographe": "",
+      "descriptionTheme": "",
+      "descriptionCouleur": "",
+      "theme": "",
+      "couleur": "",
+      "activite": "non"
     }
   ]
 }
