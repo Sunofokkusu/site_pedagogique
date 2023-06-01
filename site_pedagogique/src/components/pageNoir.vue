@@ -9,34 +9,48 @@
         lumière.
       </p>
       <h2>Les oeuvres noires connues dans l'art</h2>
+      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
-        <img
-          class="col-2"
-          src="../assets/exemples/voile.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/black.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/n6.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/peinture.jpeg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/rotterdam.png"
-        />
-      </div>
-      <div class="row">
-        <div class="col-2">Voile de calice noir, de Henri Matisse</div>
-        <div class="col-2 img">Black Paintings, de Franko B</div>
-        <div class="col-2 img">No. 6 (?), de Mark Rothko</div>
-        <div class="col-2 img">Peinture 30.03.84, de Pierre Soulages</div>
-        <div class="col-2 img">Rotterdam Horizontal #5, de Richard Serra</div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Voile de calice noir, de Henri Matisse
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/voile.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Black Paintings, de Franko B
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/black.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            No. 6 (?), de Mark Rothko
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/n6.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Peinture 30.03.84, de Pierre Soulages
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/peinture.jpeg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Rotterdam Horizontal #5, de Richard Serra
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/rotterdam.png" />
+          </div>
+        </div>
       </div>
       <h2>A toi de jouer!</h2>
       <p>Mélange des couleurs avec le noir pour voir le résultat.</p>
@@ -107,6 +121,12 @@ export default {
       if (photo.couleur === "noir") {
         this.jsonPhotosSorted.push(photo);
       }
+    });
+    var card = document.querySelectorAll(".card");
+    card.forEach((card) => {
+      card.addEventListener("click", function () {
+        card.classList.toggle("is-flipped");
+      });
     });
   },
   methods: {

@@ -7,34 +7,48 @@
         Le gris est une couleur intermédiaire entre le blanc et le noir.
       </p>
       <h2>Les oeuvres grises connues dans l'art</h2>
+      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
-        <img
-          class="col-2"
-          src="../assets/exemples/guernica.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/arbre.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/cheval.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/girl.jpg"
-        />
-        <img
-          class="col-2 img"
-          src="../assets/exemples/maternite.jpg"
-        />
-      </div>
-      <div class="row">
-        <div class="col-2">Guernica, de Pablo Picasso</div>
-        <div class="col-2 img">L'arbre gris, de Piet Mondrian</div>
-        <div class="col-2 img">Le cheval gris, de Théodore Géricault</div>
-        <div class="col-2 img">Girl in grey, de Louis Le Brocquy</div>
-        <div class="col-2 img">Maternité, de Nguyen Thanh Binh</div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Guernica, de Pablo Picasso
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/guernica.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            L'arbre gris, de Piet Mondrian
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/arbre.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Le cheval gris, de Théodore Géricault
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/cheval.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Girl in grey, de Louis Le Brocquy
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/girl.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Maternité, de Nguyen Thanh Binh
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/maternite.jpg" />
+          </div>
+        </div>
       </div>
       <h2>A toi de jouer!</h2>
       <p>
@@ -96,7 +110,7 @@ export default {
         "#9E9E9E",
         "#CCCCCC",
         "#798081",
-        "#D3D3D3"
+        "#D3D3D3",
       ],
       noms: [
         "Gris",
@@ -112,7 +126,7 @@ export default {
         "Gris souris",
         "Pinchard",
         "Plomb",
-        "Gris clair"
+        "Gris clair",
       ],
       index: 0,
     };
@@ -123,6 +137,12 @@ export default {
       if (photo.couleur === "gris") {
         this.jsonPhotosSorted.push(photo);
       }
+    });
+    var card = document.querySelectorAll(".card");
+    card.forEach((card) => {
+      card.addEventListener("click", function () {
+        card.classList.toggle("is-flipped");
+      });
     });
     document.querySelector(".nuanceGris").style.backgroundColor =
       this.nuances[this.index];
@@ -170,7 +190,7 @@ body {
   border: 1px solid black;
   margin-bottom: 10px;
 }
-.nomG{
+.nomG {
   margin-bottom: 5px;
 }
 .next {

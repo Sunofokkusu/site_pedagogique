@@ -13,6 +13,10 @@
         </p>
       </div>
     </div>
+    <div class="intro">
+      <h2>LA PHOTOGRAPHIE</h2>
+    </div>
+    <hr/>
     <div class="photos">
       <h2>PHOTOS PAR THÈME</h2>
 
@@ -187,7 +191,7 @@ h2 {
   font-size: 3vw;
   font-weight: bold;
 }
-.photos {
+.photos, .intro {
   height: 100%;
   color: black;
   background-color: white;

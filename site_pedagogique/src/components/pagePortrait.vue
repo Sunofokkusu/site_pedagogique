@@ -10,25 +10,48 @@
         réalisés à l'aide d'un appareil photographique ou d'un téléphone mobile.
       </p>
       <h2>Les portraits connus dans l'art</h2>
+      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
-        <img class="col-2" src="../assets/exemples/joconde.jpg" />
-        <img class="col-2 img" src="../assets/exemples/oreille.jpg" />
-        <img class="col-2 img" src="../assets/exemples/perle.jpg" />
-        <img class="col-2 img" src="../assets/exemples/portait.jpg" />
-        <img class="col-2 img" src="../assets/exemples/yeux.jpg" />
-      </div>
-      <div class="row">
-        <div class="col-2">La Joconde, de Léonard de Vinci</div>
-        <div class="col-2 img">
-          Autoportrait à l’oreille, de Vincent Van Gogh
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            La Joconde, de Léonard de Vinci
+          </div>
+          <div class="card__face card__face--back">
+            <img class="img" src="../assets/exemples/joconde.jpg" />
+          </div>
         </div>
-        <div class="col-2 img">
-          La jeune fille à la perle, de Johannes Vermeer
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Autoportrait à l’oreille, de Vincent Van Gogh
+          </div>
+          <div class="card__face card__face--back col-2">
+            <img class="img" src="../assets/exemples/oreille.jpg" />
+          </div>
         </div>
-        <div class="col-2 img">
-          Portrait d’Adele Bloch Bauer I, de Gustav Klimt
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            La jeune fille à la perle, de Johannes Vermeer
+          </div>
+          <div class="card__face card__face--back col-2">
+            <img class="img" src="../assets/exemples/perle.jpg" />
+          </div>
         </div>
-        <div class="col-2 img">L’afghane aux yeux verts, de Steve McCurry</div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Portrait d’Adele Bloch Bauer I, de Gustav Klimt
+          </div>
+          <div class="card__face card__face--back col-2">
+            <img class="img" src="../assets/exemples/portait.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            L’afghane aux yeux verts, de Steve McCurry
+          </div>
+          <div class="card__face card__face--back col-2">
+            <img class="img" src="../assets/exemples/yeux.jpg" />
+          </div>
+        </div>
       </div>
       <h2>A toi de jouer!</h2>
       <p>
@@ -72,7 +95,7 @@ export default {
     return {
       jsonPhotos: myJSON,
       jsonPhotosSorted: [],
-      jsonPhotosSortedActivite: []
+      jsonPhotosSortedActivite: [],
     };
   },
   mounted() {
@@ -80,9 +103,15 @@ export default {
     this.jsonPhotos.photographies.forEach((photo) => {
       if (photo.theme === "portrait" && photo.activite === "non") {
         this.jsonPhotosSorted.push(photo);
-      }else if (photo.theme === "portrait" && photo.activite === "oui") {
+      } else if (photo.theme === "portrait" && photo.activite === "oui") {
         this.jsonPhotosSortedActivite.push(photo);
       }
+    });
+    var card = document.querySelectorAll(".card");
+    card.forEach((card) => {
+      card.addEventListener("click", function () {
+        card.classList.toggle("is-flipped");
+      });
     });
     navigator.mediaDevices
       .getUserMedia({ video: true })
@@ -99,7 +128,7 @@ export default {
               canvas.width = video.videoWidth;
               canvas.height = video.videoHeight;
               canvas.getContext("2d").drawImage(video, 0, 0);
-            }else{
+            } else {
               stream.getVideoTracks()[0].stop();
             }
           });
@@ -129,7 +158,9 @@ body {
   margin-right: 20px;
 }
 .img {
-  margin-left: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .navigation {
   height: 50px;
@@ -151,5 +182,41 @@ body {
   width: 90%;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.card { 
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2vh;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  border: 1px solid black;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
 }
 </style>

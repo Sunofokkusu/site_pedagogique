@@ -9,23 +9,48 @@
         nature.
       </p>
       <h2>Les paysages connus dans l'art</h2>
+      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
-        <img class="col-2" src="../assets/exemples/nuit.jpg" />
-        <img class="col-2 img" src="../assets/exemples/soleil.jpg" />
-        <img class="col-2 img" src="../assets/exemples/moine.png" />
-        <img class="col-2 img" src="../assets/exemples/canal.jpg" />
-        <img class="col-2 img" src="../assets/exemples/estaque.jpg" />
-      </div>
-      <div class="row">
-        <div class="col-2">La nuit étoilée, de Vincent van Gogh</div>
-        <div class="col-2 img">Soleil couchant à Etretat, de Monet</div>
-        <div class="col-2 img">
-          Le moine au bord de la mer, de Caspar David Friedrich
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            La nuit étoilée, de Vincent van Gogh
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/nuit.jpg" />
+          </div>
         </div>
-        <div class="col-2 img">
-          Le Grand canal à l’église de la Salute, Giovanni Antonio Canal
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Soleil couchant à Etretat, de Monet
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/soleil.jpg" />
+          </div>
         </div>
-        <div class="col-2 img">L’Estaque, de André Derain</div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Le moine au bord de la mer, de Caspar David Friedrich
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/moine.png" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Le Grand canal à l’église de la Salute, Giovanni Antonio Canal
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/canal.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            L’Estaque, de André Derain
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/estaque.jpg" />
+          </div>
+        </div>
       </div>
       <h2>A toi de jouer!</h2>
       <p>Crée ton propre paysage en choisissant son contenu.</p>
@@ -123,6 +148,12 @@ export default {
       }
     });
     this.ok = true;
+    var card = document.querySelectorAll(".card");
+    card.forEach((card) => {
+      card.addEventListener("click", function () {
+        card.classList.toggle("is-flipped");
+      });
+    });
   },
   methods: {
     getImg(img) {

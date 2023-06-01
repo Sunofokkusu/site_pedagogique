@@ -9,21 +9,48 @@
         mais des formes et des couleurs pour elles-mêmes.
       </p>
       <h2>Les art abstraits connus dans l'art</h2>
+      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
-        <img class="col-2" src="../assets/exemples/sanstitre.jpg" />
-        <img class="col-2 img" src="../assets/exemples/congress.jpg" />
-        <img class="col-2 img" src="../assets/exemples/abstract.jpg" />
-        <img class="col-2 img" src="../assets/exemples/composition.jpg" />
-        <img class="col-2 img" src="../assets/exemples/cytwombly.jpg" />
-      </div>
-      <div class="row">
-        <div class="col-2">Sans titre, de Zao Wou-Ki</div>
-        <div class="col-2 img">Congress, de Julie Mehretu</div>
-        <div class="col-2 img">Abstract Painting, de Gerhard Richter</div>
-        <div class="col-2 img">
-          Composition II in Red, Blue, and Yellow, de piet mondrian
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Sans titre, de Zao Wou-Ki
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/sanstitre.jpg" />
+          </div>
         </div>
-        <div class="col-2 img">Sans titre, de Cy Twombly</div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Congress, de Julie Mehretu
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/congress.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Abstract Painting, de Gerhard Richter
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/abstract.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Composition II in Red, Blue, and Yellow, de piet mondrian
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/composition.jpg" />
+          </div>
+        </div>
+        <div class="card col-2">
+          <div class="card__face card__face--front">
+            Sans titre, de Cy Twombly
+          </div>
+          <div class="card__face card__face--back">
+            <img class="col-2 img" src="../assets/exemples/cytwombly.jpg" />
+          </div>
+        </div>
       </div>
       <h2>A toi de jouer!</h2>
       <p>
@@ -98,6 +125,12 @@ export default {
       if (photo.theme === "abstrait") {
         this.jsonPhotosSorted.push(photo);
       }
+    });
+    var card = document.querySelectorAll(".card");
+    card.forEach((card) => {
+      card.addEventListener("click", function () {
+        card.classList.toggle("is-flipped");
+      });
     });
   },
   methods: {
