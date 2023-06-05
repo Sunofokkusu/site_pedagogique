@@ -53,13 +53,9 @@
           </div>
         </div>
       </div>
-      <h2>A toi de jouer!</h2>
-      <p>
-        Place toi devant la caméra pour voir ton portrait (si rien ne s'affiche,
-        autorise l'accès à la caméra au navigateur).
-      </p>
-      <video id="webcam" autoplay></video>
+      <activitePortrait/>
       <h2>Les portraits de l'exposition</h2>
+      <sleeplessCountry/>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -87,10 +83,12 @@
 <script>
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
+import sleeplessCountry from '@/components/activities/sleeplessCountry.vue';
+import activitePortrait from '@/components/activities/activitePortrait.vue'
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pagePortrait",
-  components: { headerPage, footerPage },
+  components: { headerPage, footerPage, sleeplessCountry, activitePortrait },
   data() {
     return {
       jsonPhotos: myJSON,
@@ -113,30 +111,6 @@ export default {
         card.classList.toggle("is-flipped");
       });
     });
-    navigator.mediaDevices
-      .getUserMedia({ video: true })
-      .then((stream) => {
-        // Afficher le flux vidéo dans la balise vidéo
-        document.querySelector("#webcam").srcObject = stream;
-        // Attendre que la vidéo soit prête
-        document.querySelector("#webcam").onloadedmetadata = () => {
-          // Lire les codes QR à partir du flux vidéo
-          setInterval(() => {
-            const video = document.getElementById("webcam");
-            const canvas = document.createElement("canvas");
-            if (video) {
-              canvas.width = video.videoWidth;
-              canvas.height = video.videoHeight;
-              canvas.getContext("2d").drawImage(video, 0, 0);
-            } else {
-              stream.getVideoTracks()[0].stop();
-            }
-          });
-        };
-      })
-      .catch((err) => {
-        console.error(err);
-      });
   },
   methods: {
     getImg(img) {
@@ -178,13 +152,7 @@ body {
 .prev {
   cursor: pointer;
 }
-#webcam {
-  width: 90%;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.card { 
+.card {
   margin-left: 20px;
   margin-right: 20px;
   transition: transform 1s;
