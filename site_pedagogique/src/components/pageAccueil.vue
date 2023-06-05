@@ -15,6 +15,7 @@
     </div>
     <div class="intro">
       <h2>LA PHOTOGRAPHIE</h2>
+      <img class="imgintro" src="../assets/photos/intro.jpg"/>
     </div>
     <hr/>
     <div class="photos">
@@ -195,6 +196,9 @@ h2 {
   height: 100%;
   color: black;
   background-color: white;
+}
+.imgintro{
+  width: 50vw;
 }
 .row {
   justify-content: center;
