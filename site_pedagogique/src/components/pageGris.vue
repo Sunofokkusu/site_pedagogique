@@ -96,6 +96,7 @@ export default {
     return {
       jsonPhotos: myJSON,
       jsonPhotosSorted: [],
+      jsonPhotosSortedActivite: [],
       nuances: [
         "#606060",
         "#5A5E6B",
@@ -134,8 +135,10 @@ export default {
   mounted() {
     window.scroll(0, 0);
     this.jsonPhotos.photographies.forEach((photo) => {
-      if (photo.couleur === "gris") {
+      if (photo.couleur === "gris" && photo.activite === "non") {
         this.jsonPhotosSorted.push(photo);
+      } else if (photo.couleur === "gris" && photo.activite === "oui") {
+        this.jsonPhotosSortedActivite.push(photo);
       }
     });
     var card = document.querySelectorAll(".card");

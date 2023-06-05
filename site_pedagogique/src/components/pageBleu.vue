@@ -108,6 +108,7 @@ export default {
     return {
       jsonPhotos: myJSON,
       jsonPhotosSorted: [],
+      jsonPhotosSortedActivite: [],
       melange: false,
       color: "white",
       colorMelange: "",
@@ -116,8 +117,10 @@ export default {
   mounted() {
     window.scroll(0, 0);
     this.jsonPhotos.photographies.forEach((photo) => {
-      if (photo.couleur === "bleu") {
+      if (photo.couleur === "bleu" && photo.activite === "non") {
         this.jsonPhotosSorted.push(photo);
+      } else if (photo.couleur === "bleu" && photo.activite === "oui") {
+        this.jsonPhotosSortedActivite.push(photo);
       }
     });
     var card = document.querySelectorAll(".card");
