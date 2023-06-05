@@ -54,6 +54,7 @@
       </div>
       <activiteNoir/>
       <h2>Les photos noires de l'exposition</h2>
+      <sleeplessCountry/>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -82,10 +83,11 @@
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
 import activiteNoir from "@/components/activities/activiteNoir.vue";
+import sleeplessCountry from '@/components/activities/sleeplessCountry.vue';
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pageNoir",
-  components: { headerPage, footerPage, activiteNoir },
+  components: { headerPage, footerPage, activiteNoir, sleeplessCountry },
   data() {
     return {
       jsonPhotos: myJSON,

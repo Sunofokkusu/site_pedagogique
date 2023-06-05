@@ -54,6 +54,7 @@
       </div>
       <activitePaysage/>
       <h2>Les paysages de l'exposition</h2>
+      <arbreBayle/>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -81,11 +82,12 @@
 <script>
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
+import arbreBayle from '@/components/activities/arbreBayle.vue';
 import myJSON from "@/assets/photos.json";
 import activitePaysage from "@/components/activities/activitePaysage.vue";
 export default {
   name: "pagePaysage",
-  components: { headerPage, footerPage, activitePaysage },
+  components: { headerPage, footerPage, activitePaysage, arbreBayle },
   data() {
     return {
       jsonPhotos: myJSON,
