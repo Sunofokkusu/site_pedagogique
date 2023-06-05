@@ -50,16 +50,7 @@
           </div>
         </div>
       </div>
-      <h2>A toi de jouer!</h2>
-      <p>
-        Le gris ne peut pas vraiment se mélanger avec d'autres couleurs...
-        Découvre plutôt certaines de ses nuances.
-      </p>
-      <div class="row">
-        <div class="col-4 nuanceGris"></div>
-      </div>
-      <div class="nomG"></div>
-      <button class="boutton" @click="changeGris">Suivante</button>
+      <activiteGris/>
       <h2>Les photos grises de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
@@ -88,48 +79,16 @@
 <script>
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
+import activiteGris from "@/components/activities/activiteGris.vue";
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pageGris",
-  components: { headerPage, footerPage },
+  components: { headerPage, footerPage, activiteGris },
   data() {
     return {
       jsonPhotos: myJSON,
       jsonPhotosSorted: [],
       jsonPhotosSortedActivite: [],
-      nuances: [
-        "#606060",
-        "#5A5E6B",
-        "#C0C0C0",
-        "#BABABA",
-        "#EDEDED",
-        "#AFAFAF",
-        "#303030",
-        "#677179",
-        "#848484",
-        "#CECECE",
-        "#9E9E9E",
-        "#CCCCCC",
-        "#798081",
-        "#D3D3D3",
-      ],
-      noms: [
-        "Gris",
-        "Ardoise",
-        "Argent",
-        "Etain oxydé",
-        "Etain pur",
-        "Gris acier",
-        "Gris anthracite",
-        "Gris de payne",
-        "Gris fer",
-        "Gris perle",
-        "Gris souris",
-        "Pinchard",
-        "Plomb",
-        "Gris clair",
-      ],
-      index: 0,
     };
   },
   mounted() {
@@ -147,26 +106,10 @@ export default {
         card.classList.toggle("is-flipped");
       });
     });
-    document.querySelector(".nuanceGris").style.backgroundColor =
-      this.nuances[this.index];
-    document.querySelector(".nomG").innerHTML = this.noms[this.index];
   },
   methods: {
     getImg(img) {
       return require(`../assets/photos/${img}`);
-    },
-    changeGris() {
-      if (this.index === 13) {
-        this.index = 0;
-        document.querySelector(".nuanceGris").style.backgroundColor =
-          this.nuances[this.index];
-        document.querySelector(".nomG").innerHTML = this.noms[this.index];
-      } else {
-        this.index += 1;
-        document.querySelector(".nuanceGris").style.backgroundColor =
-          this.nuances[this.index];
-        document.querySelector(".nomG").innerHTML = this.noms[this.index];
-      }
     },
   },
 };
@@ -187,14 +130,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 15px;
-}
-.nuanceGris {
-  height: 20vh !important;
-  border: 1px solid black;
-  margin-bottom: 10px;
-}
-.nomG {
-  margin-bottom: 5px;
 }
 .next {
   margin-left: 5%;

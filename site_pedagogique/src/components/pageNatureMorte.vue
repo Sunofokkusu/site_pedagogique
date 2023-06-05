@@ -51,7 +51,7 @@
           </div>
         </div>
       </div>
-      <h2>A toi de jouer!</h2>
+      <activiteNatureMorte/>
       <h2>Les natures mortes de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
@@ -80,10 +80,11 @@
 <script>
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
+import activiteNatureMorte from "@/components/activities/activiteNatureMorte.vue";
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pagePortrait",
-  components: { headerPage, footerPage },
+  components: { headerPage, footerPage, activiteNatureMorte },
   data() {
     return {
       jsonPhotos: myJSON,
