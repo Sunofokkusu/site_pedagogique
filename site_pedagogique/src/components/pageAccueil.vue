@@ -173,7 +173,7 @@ export default {
 }
 .bg {
   height: 90vh;
-  /* background-image: url("../assets/background.png"); */
+  background-image: url("/src/assets/background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
