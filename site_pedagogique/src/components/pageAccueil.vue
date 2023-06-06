@@ -211,49 +211,49 @@ h2 {
   cursor: pointer;
 }
 .portrait {
-  /* background-image: url("../assets/photos/bayle2.jpg"); */
+  background-image: url("/src/assets/photos/bayle2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .paysage {
-  /* background-image: url("../assets/photos/nuit_dorages.jpg"); */
+  background-image: url("/src/assets/photos/nuit_dorages.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .abstrait {
-  /* background-image: url("../assets/photos/oneiros.jpg"); */
+  background-image: url("/src/assets/photos/oneiros.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .natureMorte {
-  /* background-image: url("../assets/photos/ostende.png"); */
+  background-image: url("/src/assets/photos/ostende.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .jaune {
-  /* background-image: url("../assets/photos/LVIV.jpg"); */
+  background-image: url("/src/assets/photos/LVIV.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .bleu {
-  /* background-image: url("../assets/photos/space.png"); */
+  background-image: url("/src/assets/photos/space.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .noir {
-  /* background-image: url("../assets/photos/sur_la_terre_comme_au_ciel.jpg"); */
+  background-image: url("/src/assets/photos/sur_la_terre_comme_au_ciel.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .gris {
-  /* background-image: url("../assets/photos/bayle4.jpg"); */
+  background-image: url("/src/assets/photos/bayle4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
