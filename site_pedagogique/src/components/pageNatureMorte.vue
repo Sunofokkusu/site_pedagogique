@@ -7,7 +7,7 @@
         C'est une représentation d'objets inanimés placés d'une certaine manière
         avec l'intention de faire passer un message.
       </p>
-      <h2>Les natures mortes connues dans l'art</h2>
+      <h2>Les natures mortes dans l'art</h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">

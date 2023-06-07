@@ -8,7 +8,7 @@
         pas être reproduite par un mélange d'autres couleurs. C'est l'une des
         couleurs les plus courantes dans la nature et la vie quotidienne.
       </p>
-      <h2>Les oeuvres bleues connues dans l'art</h2>
+      <h2>Les oeuvres bleues dans l'art</h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">

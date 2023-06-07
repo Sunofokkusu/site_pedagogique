@@ -9,7 +9,7 @@
         lumineuse et chaleureuse. C’est la couleur du soleil, de la lumière et
         de la gaieté.
       </p>
-      <h2>Les oeuvres jaunes connues dans l'art</h2>
+      <h2>Les oeuvres jaunes dans l'art</h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">

@@ -6,7 +6,7 @@
         <p class="def">
             La couleur blanche est comme de la neige ou des nuages dans le ciel. C'est une couleur lumineuse qui représente la pureté et la fraîcheur et elle est créée par le mélange des trois couleurs primaires ou de toutes les couleurs de l'arc-en-ciel de façon égale.
         </p>
-        <h2>Les oeuvres blanches connues dans l'art</h2>
+        <h2>Les oeuvres blanches dans l'art</h2>
         <p>Clique sur les cases pour faire apparaître les œuvres.</p>
         <div class="row">
           <div class="card col-2">

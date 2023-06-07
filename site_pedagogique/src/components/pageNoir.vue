@@ -8,7 +8,7 @@
         teintes, le noir pur existe dans la nature en l'absence totale de
         lumière.
       </p>
-      <h2>Les oeuvres noires connues dans l'art</h2>
+      <h2>Les oeuvres noires dans l'art</h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
