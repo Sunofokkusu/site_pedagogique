@@ -9,7 +9,7 @@
         les traits et expressions caractéristiques. Ici, les portraits sont
         réalisés à l'aide d'un appareil photographique ou d'un téléphone mobile.
       </p>
-      <h2>Les portraits connus dans l'art</h2>
+      <h2>Les portraits dans l'art</h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">

@@ -8,7 +8,7 @@
         partir d'un lieu précis. Dans l'art, c'est une représentation de la
         nature.
       </p>
-      <h2>Les paysages connus dans l'art</h2>
+      <h2>Les paysages dans l'art</h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
