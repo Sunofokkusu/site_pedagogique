@@ -2,7 +2,7 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>TOUTES LES PHOTOS</h2>
+      <h2>Toutes les photos</h2>
       <div class="photosInfos" v-for="photo in jsonPhotos.photographies" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
