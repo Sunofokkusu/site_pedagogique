@@ -50,6 +50,13 @@
           NATURE MORTE
           <hr />
         </div>
+        <div
+          class="card all col-2"
+          @click="this.$router.push({ name: 'allPhotos' })"
+        >
+          TOUT VOIR
+          <hr />
+        </div>
       </div>
 
       <h2>PHOTOS PAR COULEURS</h2>
@@ -84,6 +91,14 @@
           @click="this.$router.push({ name: 'pageGris' })"
         >
           GRIS
+          <hr />
+        </div>
+        
+        <div
+          class="card blanc col-2"
+          @click="this.$router.push({ name: 'pageBlanc' })"
+        >
+          BLANC
           <hr />
         </div>
       </div>
@@ -210,6 +225,12 @@ h2 {
   color: white;
   cursor: pointer;
 }
+.all {
+  background-image: url("/src/assets/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .portrait {
   background-image: url("/src/assets/photos/bayle2.jpg");
   background-repeat: no-repeat;
@@ -254,6 +275,12 @@ h2 {
 }
 .gris {
   background-image: url("/src/assets/photos/bayle4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blanc{
+  background-image: url("/src/assets/photos/homme.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

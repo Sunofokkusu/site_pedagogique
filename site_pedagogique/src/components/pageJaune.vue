@@ -68,8 +68,8 @@
       </div>
     </div>
     <div class="navigation">
-      <span class="prev" @click="this.$router.push({ name: 'pageGris' })"
-        >◀ Gris</span
+      <span class="prev" @click="this.$router.push({ name: 'pageBlanc' })"
+        >◀ Blanc</span
       >
       <span class="next" @click="this.$router.push({ name: 'pageBleu' })"
         >Bleu ▶</span
