@@ -8,7 +8,7 @@
         siècle. Il ne représente pas des sujets ou des objets du monde naturel,
         mais des formes et des couleurs pour elles-mêmes.
       </p>
-      <h2>Les art abstraits dans l'art</h2>
+      <h2>L'abstrait dans l'art</h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
