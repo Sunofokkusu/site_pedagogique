@@ -13,3 +13,5 @@ npm install --save html2pdf.js
 npm install @websitebeaver/vue-magnifier
 
 npm install vue-slide-puzzle
+
+npm install vue-zoomer
