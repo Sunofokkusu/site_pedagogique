@@ -16,7 +16,8 @@
     "vue": "^3.2.13",
     "vue-8-puzzle": "^0.1.1",
     "vue-router": "^4.0.3",
-    "vue-slide-puzzle": "^1.0.7"
+    "vue-slide-puzzle": "^1.0.7",
+    "vue-zoomer": "^0.3.10"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
