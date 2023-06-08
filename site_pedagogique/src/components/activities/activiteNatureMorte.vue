@@ -1,19 +1,21 @@
 <template>
   <div>
     <h2>A toi de jouer!</h2>
-    <div style="width: 400px;height: 300px;">
-      <slide-puzzle :ratio="3" mode="near" />
-    </div>
+    <!-- <puzzle-board
+      :src="getImg('asperges.jpg')" /> -->
   </div>
 </template>
 
 <script>
-import 'vue-slide-puzzle/dist/VueSlidePuzzle.css';
+// import PuzzleBoard from 'vue-8-puzzle'
 export default {
   name: "activiteNatureMorte",
+  // components: {
+  //   PuzzleBoard  
+  // },
   methods: {
     getImg(img) {
-      return require(`../../assets/photos/${img}`);
+      return require(`../../assets/exemples/${img}`);
     },
   }
 };
