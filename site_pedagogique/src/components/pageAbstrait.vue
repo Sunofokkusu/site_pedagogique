@@ -88,6 +88,7 @@
         </div>
         <hr />
       </div>
+      <activiteSurLaTerre/>
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pagePaysage' })"
@@ -106,10 +107,11 @@ import VueDrawingCanvas from "vue-drawing-canvas";
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
 import myJSON from "@/assets/photos.json";
+import activiteSurLaTerre from '@/components/activities/activiteSurLaTerre.vue';
 import html2pdf from "html2pdf.js";
 export default {
   name: "pageAbstrait",
-  components: { headerPage, footerPage, VueDrawingCanvas },
+  components: { headerPage, footerPage, VueDrawingCanvas, activiteSurLaTerre },
   data() {
     return {
       jsonPhotos: myJSON,
@@ -122,7 +124,7 @@ export default {
     window.scroll(0, 0);
     this.widthCanva = window.innerWidth / 2;
     this.jsonPhotos.photographies.forEach((photo) => {
-      if (photo.theme === "abstrait") {
+      if (photo.theme === "abstrait" && photo.activite === "non") {
         this.jsonPhotosSorted.push(photo);
       }
     });
