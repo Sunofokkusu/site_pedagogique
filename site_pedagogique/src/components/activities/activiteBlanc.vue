@@ -1,6 +1,8 @@
 <template>
     <div>
       <h2>A toi de jouer!</h2>
+      <p>Observe cette image animée, vois-tu comment le blanc est fabriqué?</p>
+      <img class="synthese" src="../../assets/white.gif" alt="synthèse additive"/>
     </div>
   </template>
   
@@ -12,5 +14,9 @@
   };
   </script>
   
-  <style></style>
+<style>
+.synthese{
+  width: 30vw;
+}
+</style>
   
