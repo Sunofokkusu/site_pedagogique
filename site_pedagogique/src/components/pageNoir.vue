@@ -67,6 +67,7 @@
         <hr />
       </div>
       <activiteSurLaTerre/>
+      <activiteGrotte/>
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pageBleu' })"
@@ -86,10 +87,11 @@ import footerPage from "@/components/footerPage.vue";
 import activiteNoir from "@/components/activities/activiteNoir.vue";
 import sleeplessCountry from '@/components/activities/sleeplessCountry.vue';
 import activiteSurLaTerre from '@/components/activities/activiteSurLaTerre.vue';
+import activiteGrotte from '@/components/activities/activiteGrotte.vue';
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pageNoir",
-  components: { headerPage, footerPage, activiteNoir, sleeplessCountry, activiteSurLaTerre },
+  components: { headerPage, footerPage, activiteNoir, sleeplessCountry, activiteSurLaTerre, activiteGrotte },
   data() {
     return {
       jsonPhotos: myJSON,

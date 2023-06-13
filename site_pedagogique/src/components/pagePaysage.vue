@@ -66,6 +66,7 @@
         </div>
         <hr />
       </div>
+      <activiteVertiges/>
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pagePortrait' })"
@@ -83,11 +84,12 @@
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
 import arbreBayle from '@/components/activities/arbreBayle.vue';
+import activiteVertiges from "@/components/activities/activiteVertiges.vue";
 import myJSON from "@/assets/photos.json";
 import activitePaysage from "@/components/activities/activitePaysage.vue";
 export default {
   name: "pagePaysage",
-  components: { headerPage, footerPage, activitePaysage, arbreBayle },
+  components: { headerPage, footerPage, activitePaysage, arbreBayle, activiteVertiges },
   data() {
     return {
       jsonPhotos: myJSON,

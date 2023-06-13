@@ -55,6 +55,7 @@
       </div>
       <activiteJaune/>
       <h2>Les photos jaunes de l'exposition</h2>
+      <activiteLVIV/>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -66,6 +67,7 @@
         </div>
         <hr />
       </div>
+      <activiteVertiges/>
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pageBlanc' })"
@@ -83,10 +85,12 @@
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
 import activiteJaune from "@/components/activities/activiteJaune.vue";
+import activiteVertiges from "@/components/activities/activiteVertiges.vue";
+import activiteLVIV from "@/components/activities/activiteLVIV.vue";
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pageJaune",
-  components: { headerPage, footerPage, activiteJaune },
+  components: { headerPage, footerPage, activiteJaune, activiteVertiges, activiteLVIV },
   data() {
     return {
       jsonPhotos: myJSON,

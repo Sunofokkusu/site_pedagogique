@@ -77,6 +77,7 @@
         <button style="cursor: pointer;margin-left: 10px" @click="exportToPDF">Exporter en PDF</button>
       </div>
       <h2>Les photos abstraites de l'exposition</h2>
+      <activiteSurLaTerre/>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -88,7 +89,7 @@
         </div>
         <hr />
       </div>
-      <activiteSurLaTerre/>
+      <activiteGrotte/>
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pagePaysage' })"
@@ -108,10 +109,11 @@ import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
 import myJSON from "@/assets/photos.json";
 import activiteSurLaTerre from '@/components/activities/activiteSurLaTerre.vue';
+import activiteGrotte from '@/components/activities/activiteGrotte.vue';
 import html2pdf from "html2pdf.js";
 export default {
   name: "pageAbstrait",
-  components: { headerPage, footerPage, VueDrawingCanvas, activiteSurLaTerre },
+  components: { headerPage, footerPage, VueDrawingCanvas, activiteSurLaTerre, activiteGrotte },
   data() {
     return {
       jsonPhotos: myJSON,
