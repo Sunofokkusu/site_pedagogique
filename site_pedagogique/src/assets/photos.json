@@ -168,7 +168,7 @@
       "descriptionCouleur": "",
       "theme": "abstrait",
       "couleur": "noir",
-      "activite": "non"
+      "activite": "oui"
     },
     {
       "chemin": "space.png",
@@ -308,7 +308,7 @@
       "descriptionCouleur": "",
       "theme": "portrait",
       "couleur": "blanc",
-      "activite": "non"
+      "activite": "oui"
     },
     {
       "chemin": "chiens.jpg",
