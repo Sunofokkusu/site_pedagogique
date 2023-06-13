@@ -9,7 +9,7 @@
           Passe ta souris sur les carrés colorés pour découvrir leur couleur
           complémentaires!
         </p>
-        <div class="align">
+        <div class="align2">
           <div class="blLVIV">
             <q-tooltip anchor="center middle" self="center middle">
               <div class="mrLVIL"></div>
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style>
-.align {
+.align2 {
   display: flex;
   margin-left: 5%;
 }
