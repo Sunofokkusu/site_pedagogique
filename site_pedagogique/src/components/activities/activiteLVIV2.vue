@@ -64,6 +64,7 @@ export default {
   background-color: #ae693f;
   width: 9vw;
   height: 9vh;
+  border: 1px solid black;
 }
 .marronLVIV {
   background-color: #deb17e;
