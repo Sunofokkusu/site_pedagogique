@@ -81,7 +81,7 @@
   import headerPage from "@/components/headerPages.vue";
   import footerPage from "@/components/footerPage.vue";
   import activiteBlanc from "@/components/activities/activiteBlanc.vue";
-  import activiteHomme from '@/components/activities/activiteHomme.vue'
+  import activiteHomme from '@/components/activities/activiteHomme.vue';
   import myJSON from "@/assets/photos.json";
   export default {
     name: "pageBlanc",
