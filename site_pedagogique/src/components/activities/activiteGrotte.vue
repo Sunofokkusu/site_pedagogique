@@ -17,6 +17,7 @@
             :height="heightCanva"
             :color="color"
             :canvasId="idCanva"
+            lineJoin="round"
             ref="VueCanvasDrawing2"
           />
           <br />

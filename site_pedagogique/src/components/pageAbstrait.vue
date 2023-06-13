@@ -63,6 +63,7 @@
         <vue-drawing-canvas
           :width="widthCanva"
           :color="color"
+          lineJoin="round"
           ref="VueCanvasDrawing"
         />
         <br />
