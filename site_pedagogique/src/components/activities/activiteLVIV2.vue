@@ -7,7 +7,7 @@
         <p>Viacheslav POLIAKOV</p>
         <p>
           Passe ta souris sur les carrés colorés pour découvrir leur couleur
-          complémentaires!
+          complémentaire!
         </p>
         <div class="align2">
           <div class="blLVIV">

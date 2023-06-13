@@ -5,7 +5,7 @@
       <div class="col-6">
         <h2>LVIV</h2>
         <p>Viacheslav POLIAKOV</p>
-        <p>Passe ta souris sur les carrés colorés pour découvrir leur couleur complémentaires!</p>
+        <p>Passe ta souris sur les carrés colorés pour découvrir leur couleur complémentaire!</p>
         <div class="align">
           <div class="jauneLVIV">
           <q-tooltip anchor="center middle" self="center middle">
