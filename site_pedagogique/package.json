@@ -12,6 +12,7 @@
     "@websitebeaver/vue-magnifier": "^1.1.0",
     "core-js": "^3.8.3",
     "html2pdf.js": "^0.10.1",
+    "node-vibrant": "^3.2.1-alpha.1",
     "quasar": "^2.0.0",
     "vue": "^3.2.13",
     "vue-8-puzzle": "^0.1.1",
