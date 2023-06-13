@@ -66,8 +66,8 @@
         </div>
         <hr />
       </div>
-      <activiteSurLaTerre/>
       <activiteGrotte/>
+      <activiteSurLaTerre/>
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pageBleu' })"
