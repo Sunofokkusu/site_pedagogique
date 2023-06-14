@@ -14,8 +14,11 @@
       </div>
     </div>
     <div class="intro">
-      <h2 class="acc">LA PHOTOGRAPHIE</h2>
-      <img class="imgintro" src="../assets/photos/intro.jpg"/>
+      <h2 class="acc">LA PHOTOGRAPHIE <font-awesome-icon :icon="['fas', 'camera']" /></h2>
+      <div class="row">
+        <img class="imgintro col-5" src="../assets/photos/intro.jpg"/>
+        <p class="col-5 q-mt-sm">texte</p>
+      </div>
     </div>
     <hr/>
     <div class="photos">
@@ -26,35 +29,35 @@
           class="card portrait col-2"
           @click="this.$router.push({ name: 'pagePortrait' })"
         >
-          PORTRAITS
+        <font-awesome-icon icon="fa-solid fa-user" /> PORTRAITS
           <hr />
         </div>
         <div
           class="card paysage col-2"
           @click="this.$router.push({ name: 'pagePaysage' })"
         >
-          PAYSAGES
+        <font-awesome-icon icon="fa-solid fa-mountain-sun" /> PAYSAGES
           <hr />
         </div>
         <div
           class="card abstrait col-2"
           @click="this.$router.push({ name: 'pageAbstrait' })"
         >
-          ABSTRAIT
+        <font-awesome-icon icon="fa-solid fa-wave-square" /> ABSTRAIT
           <hr />
         </div>
         <div
           class="card natureMorte col-2"
           @click="this.$router.push({ name: 'pageNatureMorte' })"
         >
-          NATURE MORTE
-          <hr />
+        <font-awesome-icon icon="fa-solid fa-apple-whole" /> NATURE MORTE
+          <hr class="test"/>
         </div>
         <div
           class="card all col-2"
           @click="this.$router.push({ name: 'allPhotos' })"
         >
-          TOUT VOIR
+        <font-awesome-icon icon="fa-solid fa-border-all" /> TOUT VOIR
           <hr />
         </div>
       </div>
@@ -66,7 +69,7 @@
           class="card jaune col-2"
           @click="this.$router.push({ name: 'pageJaune' })"
         >
-          JAUNE
+        <font-awesome-icon class="j" icon="fa-solid fa-palette" /> JAUNE
           <hr />
         </div>
 
@@ -74,7 +77,7 @@
           class="card bleu col-2"
           @click="this.$router.push({ name: 'pageBleu' })"
         >
-          BLEU
+        <font-awesome-icon class="b" icon="fa-solid fa-palette" /> BLEU
           <hr />
         </div>
 
@@ -82,7 +85,7 @@
           class="card noir col-2"
           @click="this.$router.push({ name: 'pageNoir' })"
         >
-          NOIR
+        <font-awesome-icon class="n" icon="fa-solid fa-palette" /> NOIR
           <hr />
         </div>
 
@@ -90,7 +93,7 @@
           class="card gris col-2"
           @click="this.$router.push({ name: 'pageGris' })"
         >
-          GRIS
+        <font-awesome-icon class="g" icon="fa-solid fa-palette" /> GRIS
           <hr />
         </div>
         
@@ -98,13 +101,13 @@
           class="card blanc col-2"
           @click="this.$router.push({ name: 'pageBlanc' })"
         >
-          BLANC
+        <font-awesome-icon class="bl" icon="fa-solid fa-palette" /> BLANC
           <hr />
         </div>
       </div>
     </div>
     <div class="infos">
-      <h2 class="infoTitle">INFORMATIONS</h2>
+      <h2 class="infoTitle">INFORMATIONS <font-awesome-icon icon="fa-solid fa-circle-info" /></h2>
       <div class="row pb">
         <div class="col-4 adress">
           47 Bd d’Austrasie – à côté de l’Autre Canal <br />
@@ -217,7 +220,7 @@ h2 {
   background-color: white;
 }
 .imgintro{
-  width: 50vw;
+  width: 650px !important;
 }
 .row {
   justify-content: center;
@@ -320,6 +323,21 @@ body {
 }
 a {
   text-decoration: underline;
+  color: white;
+}
+.j{
+  color: yellow;
+}
+.b{
+  color: blue;
+}
+.n{
+  color: black;
+}
+.g{
+  color:gray;
+}
+.bl{
   color: white;
 }
 </style>

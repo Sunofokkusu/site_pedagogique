@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>A toi de jouer!</h2>
+    <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
     <p>Mélange des couleurs avec le jaune pour voir le résultat.</p>
     <div v-if="!melange">
       <div class="row">

@@ -2,13 +2,13 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce qu'un paysage?</h2>
+      <h2>Qu'est ce qu'un paysage <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
       <p class="def">
         Le paysage est constitué par l'ensemble des éléments observables à
         partir d'un lieu précis. Dans l'art, c'est une représentation de la
         nature.
       </p>
-      <h2>Les paysages dans l'art</h2>
+      <h2>Les paysages dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">

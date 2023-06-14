@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>A toi de jouer!</h2>
+    <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
     <!-- <puzzle-board
       :src="getImg('asperges.jpg')" /> -->
   </div>

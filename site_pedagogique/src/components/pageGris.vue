@@ -2,11 +2,11 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce que le gris?</h2>
+      <h2>Qu'est ce que le gris <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
       <p class="def">
         Le gris est une couleur intermédiaire entre le blanc et le noir.
       </p>
-      <h2>Les oeuvres grises dans l'art</h2>
+      <h2>Les oeuvres grises dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">

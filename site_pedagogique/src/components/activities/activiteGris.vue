@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>A toi de jouer!</h2>
+    <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
     <p>
       Le gris ne peut pas vraiment se mélanger avec d'autres couleurs...
       Découvre plutôt certaines de ses nuances.

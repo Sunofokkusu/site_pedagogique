@@ -2,13 +2,13 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce que le noir?</h2>
+      <h2>Qu'est ce que le noir <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
       <p class="def">
         Le noir est l'absence de lumière. Contrairement au blanc et aux autres
         teintes, le noir pur existe dans la nature en l'absence totale de
         lumière.
       </p>
-      <h2>Les oeuvres noires dans l'art</h2>
+      <h2>Les oeuvres noires dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">

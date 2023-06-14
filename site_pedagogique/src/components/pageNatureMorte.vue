@@ -2,12 +2,12 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce qu'une nature morte?</h2>
+      <h2>Qu'est ce qu'une nature morte <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
       <p class="def">
         C'est une représentation d'objets inanimés placés d'une certaine manière
         avec l'intention de faire passer un message.
       </p>
-      <h2>Les natures mortes dans l'art</h2>
+      <h2>Les natures mortes dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">

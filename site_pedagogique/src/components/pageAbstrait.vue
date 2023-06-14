@@ -2,13 +2,13 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce que l'art abstrait?</h2>
+      <h2>Qu'est ce que l'art abstrait <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
       <p class="def">
         L'art abstrait est un mouvement international qui domine tout le XXe
         siècle. Il ne représente pas des sujets ou des objets du monde naturel,
         mais des formes et des couleurs pour elles-mêmes.
       </p>
-      <h2>L'abstrait dans l'art</h2>
+      <h2>L'abstrait dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <h2>A toi de jouer!</h2>
+      <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
       <p>
         Dessine ton propre art abstrait.<br />Couleur:&nbsp;<input
           type="color"

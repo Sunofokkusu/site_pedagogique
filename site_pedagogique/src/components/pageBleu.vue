@@ -2,13 +2,13 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce que le bleu?</h2>
+      <h2>Qu'est ce que le bleu <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
       <p class="def">
         Le bleu est une couleur primaire, c'est à dire une couleur qui ne peut
         pas être reproduite par un mélange d'autres couleurs. C'est l'une des
         couleurs les plus courantes dans la nature et la vie quotidienne.
       </p>
-      <h2>Les oeuvres bleues dans l'art</h2>
+      <h2>Les oeuvres bleues dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">

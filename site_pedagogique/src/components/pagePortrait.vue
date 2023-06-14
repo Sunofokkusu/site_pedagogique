@@ -2,14 +2,14 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce qu'un portrait?</h2>
+      <h2>Qu'est ce qu'un portrait <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
       <p class="def">
         Représentation, d'après un modèle réel, d'un être (surtout d'un être
         animé) par un artiste qui s'attache à en reproduire ou à en interpréter
         les traits et expressions caractéristiques. Ici, les portraits sont
         réalisés à l'aide d'un appareil photographique ou d'un téléphone mobile.
       </p>
-      <h2>Les portraits dans l'art</h2>
+      <h2>Les portraits dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
       <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
