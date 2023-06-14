@@ -173,10 +173,11 @@ body {
 .card__face {
   display: flex;
   position: absolute;
-  height: 100%;
+  height: 300px;
+  width: 250px;
   color: black;
   padding: 10px;
-  text-align: center;
+  justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: 2vh;
