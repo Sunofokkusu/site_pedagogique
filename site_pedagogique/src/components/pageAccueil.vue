@@ -119,7 +119,7 @@
             </l-map>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 q-ml-md">
           L’OCTROI NANCY. Du 12 mai au 4 juin 2023<br />
           Vernissage • 12 mai 2023 à 18h <br />
           <hr class="sepInfo" />
@@ -296,6 +296,7 @@ hr {
 }
 .infoTitle {
   color: white;
+  margin-bottom: 20px !important;
 }
 .infos {
   background-color: black;
@@ -312,7 +313,7 @@ body {
   margin: 0 !important;
 }
 .pb {
-  padding-bottom: 100px;
+  padding-bottom: 65px;
 }
 .pb2 {
   padding-bottom: 20px;
