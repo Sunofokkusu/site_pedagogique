@@ -62,7 +62,7 @@
           <div class="col-6">
             <h2>{{ photo.nom }}</h2>
             <p>{{ photo.photographe }}</p>
-            <p>{{ photo.descriptionTheme }}</p>
+            <p>{{ photo.description }}</p>
           </div>
         </div>
         <hr />
