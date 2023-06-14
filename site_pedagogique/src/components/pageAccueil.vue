@@ -23,35 +23,35 @@
 
       <div class="row">
         <div
-          class="card portrait col-2 mb-3"
+          class="card portrait col-2"
           @click="this.$router.push({ name: 'pagePortrait' })"
         >
           PORTRAITS
           <hr />
         </div>
         <div
-          class="card paysage col-2 mb-3"
+          class="card paysage col-2"
           @click="this.$router.push({ name: 'pagePaysage' })"
         >
           PAYSAGES
           <hr />
         </div>
         <div
-          class="card abstrait col-2 mb-3"
+          class="card abstrait col-2"
           @click="this.$router.push({ name: 'pageAbstrait' })"
         >
           ABSTRAIT
           <hr />
         </div>
         <div
-          class="card natureMorte col-2 mb-3"
+          class="card natureMorte col-2"
           @click="this.$router.push({ name: 'pageNatureMorte' })"
         >
           NATURE MORTE
           <hr />
         </div>
         <div
-          class="card all col-2 mb-3"
+          class="card all col-2"
           @click="this.$router.push({ name: 'allPhotos' })"
         >
           TOUT VOIR
@@ -63,7 +63,7 @@
 
       <div class="row">
         <div
-          class="card jaune col-2 mb-3"
+          class="card jaune col-2"
           @click="this.$router.push({ name: 'pageJaune' })"
         >
           JAUNE
@@ -71,7 +71,7 @@
         </div>
 
         <div
-          class="card bleu col-2 mb-3"
+          class="card bleu col-2"
           @click="this.$router.push({ name: 'pageBleu' })"
         >
           BLEU
@@ -79,7 +79,7 @@
         </div>
 
         <div
-          class="card noir col-2 mb-3"
+          class="card noir col-2"
           @click="this.$router.push({ name: 'pageNoir' })"
         >
           NOIR
@@ -87,7 +87,7 @@
         </div>
 
         <div
-          class="card gris col-2 mb-3"
+          class="card gris col-2"
           @click="this.$router.push({ name: 'pageGris' })"
         >
           GRIS
@@ -95,7 +95,7 @@
         </div>
         
         <div
-          class="card blanc col-2 mb-3"
+          class="card blanc col-2"
           @click="this.$router.push({ name: 'pageBlanc' })"
         >
           BLANC
