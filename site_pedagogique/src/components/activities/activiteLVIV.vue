@@ -6,7 +6,7 @@
         <h2>LVIV</h2>
         <p>Viacheslav POLIAKOV</p>
         <p>
-          Passe ta souris sur les carrés colorés pour découvrir leur couleur
+          Passe ta souris sur le carré coloré pour découvrir sa couleur
           complémentaire!
         </p>
         <div class="align">
