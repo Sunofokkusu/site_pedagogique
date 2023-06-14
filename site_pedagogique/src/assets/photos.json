@@ -4,8 +4,7 @@
       "chemin": "nuit_dorages.jpg",
       "nom": "Nuit d'orages",
       "photographe": "Frantiek ZVARDON",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "jaune",
       "activite": "non"
@@ -14,8 +13,7 @@
       "chemin": "les_ballons.png",
       "nom": "Les ballons",
       "photographe": "Bernard FAUCON",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "bleu",
       "activite": "non"
@@ -24,8 +22,7 @@
       "chemin": "circle_of_water.jpg",
       "nom": "Circle of water",
       "photographe": "Michael KENNA",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "gris",
       "activite": "non"
@@ -34,8 +31,7 @@
       "chemin": "les_herbes.jpg",
       "nom": "Les herbes",
       "photographe": "Patrick BAILLY-MAÎTRE-GRAND",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "noir",
       "activite": "non"
@@ -44,8 +40,7 @@
       "chemin": "bayle4.jpg",
       "nom": "Bayle",
       "photographe": "François BOUTAUD",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "gris",
       "activite": "oui"
@@ -54,8 +49,7 @@
       "chemin": "faille_entre_lieux_et_non_lieux.jpg",
       "nom": "Failles, entre lieux et non-lieux",
       "photographe": "Franck POURCEL",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "blanc",
       "activite": "non"
@@ -64,8 +58,7 @@
       "chemin": "je_fixerai_des_vertiges.jpg",
       "nom": "Je fixerai des vertiges",
       "photographe": "Georges PACHECO",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "bleu",
       "activite": "non"
@@ -74,8 +67,7 @@
       "chemin": "je_fixerai_des_vertiges2.jpg",
       "nom": "Je fixerai des vertiges",
       "photographe": "Georges PACHECO",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "jaune",
       "activite": "oui"
@@ -84,8 +76,7 @@
       "chemin": "LVIV3.jpg",
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "jaune",
       "activite": "non"
@@ -94,8 +85,7 @@
       "chemin": "i_am_folding_the_land.jpg",
       "nom": "I am folding the land",
       "photographe": "Catherine CATTARUZZA",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "jaune",
       "activite": "non"
@@ -104,8 +94,7 @@
       "chemin": "bayle.png",
       "nom": "Bayle",
       "photographe": "François BOUTAUD",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "portrait",
       "couleur": "noir",
       "activite": "non"
@@ -114,8 +103,7 @@
       "chemin": "bayle3.jpg",
       "nom": "Bayle",
       "photographe": "François BOUTAUD",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "portrait",
       "couleur": "gris",
       "activite": "non"
@@ -124,8 +112,7 @@
       "chemin": "sleepless_country.jpg",
       "nom": "Sleepless country",
       "photographe": "Adrienne SUPRENANT",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "portrait",
       "couleur": "noir",
       "activite": "oui"
@@ -134,8 +121,7 @@
       "chemin": "LVIV.jpg",
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "portrait",
       "couleur": "jaune",
       "activite": "oui"
@@ -144,8 +130,7 @@
       "chemin": "LVIV4.jpg",
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "abstrait",
       "couleur": "jaune",
       "activite": "non"
@@ -154,8 +139,7 @@
       "chemin": "LVIV5.png",
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "abstrait",
       "couleur": "jaune",
       "activite": "oui"
@@ -164,8 +148,7 @@
       "chemin": "grottes_du_trou_noir.jpg",
       "nom": "Grotte du trou noir",
       "photographe": "François DENIS",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "abstrait",
       "couleur": "noir",
       "activite": "oui"
@@ -174,8 +157,7 @@
       "chemin": "space.png",
       "nom": "Space",
       "photographe": "",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "abstrait",
       "couleur": "bleu",
       "activite": "non"
@@ -184,8 +166,7 @@
       "chemin": "oneiros.jpg",
       "nom": "Oneiros",
       "photographe": "Armelle TULUNDA",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "abstrait",
       "couleur": "noir",
       "activite": "non"
@@ -194,8 +175,7 @@
       "chemin": "sur_la_terre_comme_au_ciel.jpg",
       "nom": "Sur la terre comme au ciel",
       "photographe": "Armelle TULUNDA",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "abstrait",
       "couleur": "noir",
       "activite": "oui"
@@ -204,8 +184,7 @@
       "chemin": "eres_una_maravilla.png",
       "nom": "Eres una maravilla",
       "photographe": "Magali LAMBERT",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "natureMorte",
       "couleur": "noir",
       "activite": "non"
@@ -214,8 +193,7 @@
       "chemin": "LVIV6.jpg",
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "natureMorte",
       "couleur": "bleu",
       "activite": "non"
@@ -224,8 +202,7 @@
       "chemin": "LVIV2.jpg",
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "natureMorte",
       "couleur": "bleu",
       "activite": "non"
@@ -234,8 +211,7 @@
       "chemin": "on_street.png",
       "nom": "On street",
       "photographe": "",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "natureMorte",
       "couleur": "jaune",
       "activite": "non"
@@ -244,8 +220,7 @@
       "chemin": "ostende.png",
       "nom": "Ostende",
       "photographe": "Yvon LAMBERT",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "natureMorte",
       "couleur": "blanc",
       "activite": "non"
@@ -254,8 +229,7 @@
       "chemin": "faille_entre_lieux_et_non_lieux3.jpg",
       "nom": "Failles, entre lieux et non-lieux",
       "photographe": "Franck POURCEL",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "portrait",
       "couleur": "bleu",
       "activite": "non"
@@ -264,8 +238,7 @@
       "chemin": "ostende.jpg",
       "nom": "Ostende",
       "photographe": "Yvon LAMBERT",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "natureMorte",
       "couleur": "bleu",
       "activite": "non"
@@ -274,8 +247,7 @@
       "chemin": "hazard.jpg",
       "nom": "Hazard",
       "photographe": "Armelle TULUNDA",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "abstrait",
       "couleur": "noir",
       "activite": "non"
@@ -284,8 +256,7 @@
       "chemin": "failles_entre_lieux_et_non_lieux2.jpg",
       "nom": "Failles, entre lieux et non-lieux",
       "photographe": "Franck POURCEL",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "bleu",
       "activite": "non"
@@ -294,8 +265,7 @@
       "chemin": "piscine.jpg",
       "nom": "",
       "photographe": "",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "blanc",
       "activite": "non"
@@ -304,8 +274,7 @@
       "chemin": "homme.jpg",
       "nom": "",
       "photographe": "",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "portrait",
       "couleur": "blanc",
       "activite": "oui"
@@ -314,8 +283,7 @@
       "chemin": "chiens.jpg",
       "nom": "",
       "photographe": "",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "blanc",
       "activite": "non"
@@ -324,8 +292,7 @@
       "chemin": "montagne.jpg",
       "nom": "",
       "photographe": "",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "paysage",
       "couleur": "gris",
       "activite": "non"
@@ -334,8 +301,7 @@
       "chemin": "cone.jpg",
       "nom": "",
       "photographe": "",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "natureMorte",
       "couleur": "noir",
       "activite": "non"
@@ -344,8 +310,7 @@
       "chemin": "neonforests.jpg",
       "nom": "Neonforests",
       "photographe": "Thilo SEIDEL",
-      "descriptionTheme": "",
-      "descriptionCouleur": "",
+      "description": "",
       "theme": "abstrait",
       "couleur": "noir",
       "activite": "non"
