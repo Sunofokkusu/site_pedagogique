@@ -14,12 +14,12 @@
       </div>
     </div>
     <div class="intro">
-      <h2>LA PHOTOGRAPHIE</h2>
+      <h2 class="acc">LA PHOTOGRAPHIE</h2>
       <img class="imgintro" src="../assets/photos/intro.jpg"/>
     </div>
     <hr/>
     <div class="photos">
-      <h2>PHOTOS PAR THÈME</h2>
+      <h2 class="acc">PHOTOS PAR THÈME</h2>
 
       <div class="row">
         <div
@@ -59,7 +59,7 @@
         </div>
       </div>
 
-      <h2>PHOTOS PAR COULEURS</h2>
+      <h2 class="acc">PHOTOS PAR COULEURS</h2>
 
       <div class="row">
         <div
@@ -206,6 +206,10 @@ export default {
 h2 {
   font-size: 3vw;
   font-weight: bold;
+  margin-bottom: 0 !important;
+}
+.acc{
+  margin-bottom: 20px !important;
 }
 .photos, .intro {
   height: 100%;
