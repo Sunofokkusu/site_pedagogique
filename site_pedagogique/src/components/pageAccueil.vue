@@ -14,13 +14,15 @@
       </div>
     </div>
     <div class="intro">
-      <h2 class="acc">LA PHOTOGRAPHIE <font-awesome-icon :icon="['fas', 'camera']" /></h2>
+      <h2 class="acc">
+        LA PHOTOGRAPHIE <font-awesome-icon :icon="['fas', 'camera']" />
+      </h2>
       <div class="row">
-        <img class="imgintro col-5" src="../assets/photos/intro.jpg"/>
+        <img class="imgintro col-5" src="../assets/photos/intro.jpg" />
         <p class="col-5 q-mt-sm">texte</p>
       </div>
     </div>
-    <hr/>
+    <hr />
     <div class="photos">
       <h2 class="acc">PHOTOS PAR THÈME</h2>
 
@@ -29,36 +31,31 @@
           class="card portrait col-2"
           @click="this.$router.push({ name: 'pagePortrait' })"
         >
-        <font-awesome-icon icon="fa-solid fa-user" /> PORTRAITS
-          <hr />
+          <font-awesome-icon class="picto" icon="fa-solid fa-user" /> PORTRAITS
         </div>
         <div
           class="card paysage col-2"
           @click="this.$router.push({ name: 'pagePaysage' })"
         >
-        <font-awesome-icon icon="fa-solid fa-mountain-sun" /> PAYSAGES
-          <hr />
+          <font-awesome-icon class="picto" icon="fa-solid fa-mountain-sun" /> PAYSAGES
         </div>
         <div
           class="card abstrait col-2"
           @click="this.$router.push({ name: 'pageAbstrait' })"
         >
-        <font-awesome-icon icon="fa-solid fa-wave-square" /> ABSTRAIT
-          <hr />
+          <font-awesome-icon class="picto" icon="fa-solid fa-wave-square" /> ABSTRAIT
         </div>
         <div
           class="card natureMorte col-2"
           @click="this.$router.push({ name: 'pageNatureMorte' })"
         >
-        <font-awesome-icon icon="fa-solid fa-apple-whole" /> NATURE MORTE
-          <hr class="test"/>
+          <font-awesome-icon class="picto" icon="fa-solid fa-apple-whole" /> NATURE MORTE
         </div>
         <div
           class="card all col-2"
           @click="this.$router.push({ name: 'allPhotos' })"
         >
-        <font-awesome-icon icon="fa-solid fa-border-all" /> TOUT VOIR
-          <hr />
+          <font-awesome-icon class="picto" icon="fa-solid fa-border-all" /> TOUT VOIR
         </div>
       </div>
 
@@ -69,56 +66,59 @@
           class="card jaune col-2"
           @click="this.$router.push({ name: 'pageJaune' })"
         >
-        <font-awesome-icon class="j" icon="fa-solid fa-palette" /> JAUNE
-          <hr />
+          <font-awesome-icon class="j picto" icon="fa-solid fa-palette" /> JAUNE
         </div>
 
         <div
           class="card bleu col-2"
           @click="this.$router.push({ name: 'pageBleu' })"
         >
-        <font-awesome-icon class="b" icon="fa-solid fa-palette" /> BLEU
-          <hr />
+          <font-awesome-icon class="b picto" icon="fa-solid fa-palette" /> BLEU
         </div>
 
         <div
           class="card noir col-2"
           @click="this.$router.push({ name: 'pageNoir' })"
         >
-        <font-awesome-icon class="n" icon="fa-solid fa-palette" /> NOIR
-          <hr />
+          <font-awesome-icon class="n picto" icon="fa-solid fa-palette" /> NOIR
         </div>
 
         <div
           class="card gris col-2"
           @click="this.$router.push({ name: 'pageGris' })"
         >
-        <font-awesome-icon class="g" icon="fa-solid fa-palette" /> GRIS
-          <hr />
+          <font-awesome-icon class="g picto" icon="fa-solid fa-palette" /> GRIS
         </div>
-        
+
         <div
           class="card blanc col-2"
           @click="this.$router.push({ name: 'pageBlanc' })"
         >
-        <font-awesome-icon class="bl" icon="fa-solid fa-palette" /> BLANC
-          <hr />
+          <font-awesome-icon class="bl picto" icon="fa-solid fa-palette" /> BLANC
         </div>
       </div>
     </div>
     <div class="infos">
-      <h2 class="infoTitle">INFORMATIONS <font-awesome-icon icon="fa-solid fa-circle-info" /></h2>
+      <h2 class="infoTitle">
+        INFORMATIONS <font-awesome-icon icon="fa-solid fa-circle-info" />
+      </h2>
       <div class="row pb">
         <div class="col-4 adress">
           47 Bd d’Austrasie – à côté de l’Autre Canal <br />
           <div class="map">
-            <l-map ref="map" :zoom="zoom" :center="[48.693143444429246, 6.1993434429581304]">
+            <l-map
+              ref="map"
+              :zoom="zoom"
+              :center="[48.693143444429246, 6.1993434429581304]"
+            >
               <l-tile-layer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 layer-type="base"
                 name="OpenStreetMap"
               ></l-tile-layer>
-              <l-marker :lat-lng="[48.693143444429246, 6.1993434429581304]" ></l-marker>
+              <l-marker
+                :lat-lng="[48.693143444429246, 6.1993434429581304]"
+              ></l-marker>
             </l-map>
           </div>
         </div>
@@ -151,30 +151,30 @@
         ><br />
       </div>
     </div>
-    <footerPage/>
+    <footerPage />
   </div>
 </template>
 
 <script>
 import "leaflet/dist/leaflet.css";
-import footerPage from '@/components/footerPage.vue';
-import { LMap,LTileLayer,LMarker } from "@vue-leaflet/vue-leaflet";
+import footerPage from "@/components/footerPage.vue";
+import { LMap, LTileLayer, LMarker } from "@vue-leaflet/vue-leaflet";
 export default {
   name: "pageAccueil",
   components: {
     LMap,
     LTileLayer,
     LMarker,
-    footerPage
+    footerPage,
   },
   data() {
     return {
       zoom: 15,
     };
   },
-  mounted(){
+  mounted() {
     window.scroll(0, 0);
-  }
+  },
 };
 </script>
 
@@ -211,21 +211,26 @@ h2 {
   font-weight: bold;
   margin-bottom: 0 !important;
 }
-.acc{
+.acc {
   margin-bottom: 20px !important;
 }
-.photos, .intro {
+.photos,
+.intro {
   height: 100%;
   color: black;
   background-color: white;
 }
-.imgintro{
+.imgintro {
   width: 650px !important;
 }
 .row {
   justify-content: center;
 }
 .card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 20px;
   border-radius: 15px;
   height: 300px !important;
@@ -233,6 +238,13 @@ h2 {
   color: white;
   cursor: pointer;
   margin-bottom: 15px;
+  font-size: 30px;
+}
+.picto{
+  font-size: 60px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
 }
 .all {
   background-image: url("/src/assets/background.png");
@@ -288,7 +300,7 @@ h2 {
   background-position: center;
   background-size: cover;
 }
-.blanc{
+.blanc {
   background-image: url("/src/assets/photos/homme.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -325,19 +337,19 @@ a {
   text-decoration: underline;
   color: white;
 }
-.j{
+.j {
   color: yellow;
 }
-.b{
+.b {
   color: blue;
 }
-.n{
+.n {
   color: black;
 }
-.g{
-  color:gray;
+.g {
+  color: gray;
 }
-.bl{
+.bl {
   color: white;
 }
 </style>
