@@ -66,35 +66,35 @@
           class="card jaune col-2"
           @click="this.$router.push({ name: 'pageJaune' })"
         >
-          <font-awesome-icon class="j picto" icon="fa-solid fa-palette" /> JAUNE
+          JAUNE
         </div>
 
         <div
           class="card bleu col-2"
           @click="this.$router.push({ name: 'pageBleu' })"
         >
-          <font-awesome-icon class="b picto" icon="fa-solid fa-palette" /> BLEU
+          BLEU
         </div>
 
         <div
           class="card noir col-2"
           @click="this.$router.push({ name: 'pageNoir' })"
         >
-          <font-awesome-icon class="n picto" icon="fa-solid fa-palette" /> NOIR
+          NOIR
         </div>
 
         <div
           class="card gris col-2"
           @click="this.$router.push({ name: 'pageGris' })"
         >
-          <font-awesome-icon class="g picto" icon="fa-solid fa-palette" /> GRIS
+          GRIS
         </div>
 
         <div
           class="card blanc col-2"
           @click="this.$router.push({ name: 'pageBlanc' })"
         >
-          <font-awesome-icon class="bl picto" icon="fa-solid fa-palette" /> BLANC
+          BLANC
         </div>
       </div>
     </div>
@@ -335,21 +335,6 @@ body {
 }
 a {
   text-decoration: underline;
-  color: white;
-}
-.j {
-  color: yellow;
-}
-.b {
-  color: blue;
-}
-.n {
-  color: black;
-}
-.g {
-  color: gray;
-}
-.bl {
   color: white;
 }
 </style>
