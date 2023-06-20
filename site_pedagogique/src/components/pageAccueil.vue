@@ -19,7 +19,14 @@
       </h2>
       <div class="row">
         <img class="imgintro col-5" src="../assets/photos/intro.jpg" />
-        <p class="col-5 q-mt-sm">texte</p>
+        <p class="col-5 q-mt-sm">
+          Il existe plusieurs manières de faire des images<br />
+          La peinture, le dessin et aussi la photographie<br />
+          La photographie est une manière de faire des images <br />
+          Les photographies peuvent être sur du papier, sur un ordinateur ou un
+          téléphone<br />
+          Avec les photographies on peut garder des moments en souvenir
+        </p>
       </div>
     </div>
     <hr />
@@ -37,25 +44,29 @@
           class="card paysage col-2"
           @click="this.$router.push({ name: 'pagePaysage' })"
         >
-          <font-awesome-icon class="picto" icon="fa-solid fa-mountain-sun" /> PAYSAGES
+          <font-awesome-icon class="picto" icon="fa-solid fa-mountain-sun" />
+          PAYSAGES
         </div>
         <div
           class="card abstrait col-2"
           @click="this.$router.push({ name: 'pageAbstrait' })"
         >
-          <font-awesome-icon class="picto" icon="fa-solid fa-wave-square" /> ABSTRAIT
+          <font-awesome-icon class="picto" icon="fa-solid fa-wave-square" />
+          ABSTRAIT
         </div>
         <div
           class="card natureMorte col-2"
           @click="this.$router.push({ name: 'pageNatureMorte' })"
         >
-          <font-awesome-icon class="picto" icon="fa-solid fa-apple-whole" /> NATURE MORTE
+          <font-awesome-icon class="picto" icon="fa-solid fa-apple-whole" />
+          NATURE MORTE
         </div>
         <div
           class="card all col-2"
           @click="this.$router.push({ name: 'allPhotos' })"
         >
-          <font-awesome-icon class="picto" icon="fa-solid fa-border-all" /> TOUT VOIR
+          <font-awesome-icon class="picto" icon="fa-solid fa-border-all" /> TOUT
+          VOIR
         </div>
       </div>
 
@@ -240,7 +251,7 @@ h2 {
   margin-bottom: 15px;
   font-size: 30px;
 }
-.picto{
+.picto {
   font-size: 60px;
   position: absolute;
   top: 20%;
