@@ -2,7 +2,9 @@
   <div>
     <h2>Sleepless country</h2>
     <p>Adrienne SURPRENANT</p>
-    <div class="wrapper"><div class="shadow"></div></div>
+    <div class="cursor">
+      <div class="wrapper"><div class="shadow"></div></div>
+    </div>
     <hr />
   </div>
 </template>
