@@ -1,20 +1,42 @@
 <template>
   <div>
-    <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
-    <p>Complète ce puzzle pour découvrir l'image!</p>
-    <div id="images">
-      <div id="drag1" draggable @dragstart="drag($event)"></div>
-      <div id="drag4" draggable @dragstart="drag($event)"></div>
-      <div id="drag2" draggable @dragstart="drag($event)"></div>
-      <div id="drag3" draggable @dragstart="drag($event)"></div>
-    </div>
+    <section class="grisbg">
+      <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
+      <p class="def">Complète ce puzzle pour découvrir l'image!</p>
+      <div id="images">
+        <div id="drag1" draggable @dragstart="drag($event)"></div>
+        <div id="drag4" draggable @dragstart="drag($event)"></div>
+        <div id="drag2" draggable @dragstart="drag($event)"></div>
+        <div id="drag3" draggable @dragstart="drag($event)"></div>
+      </div>
 
-    <div id="text">
-      <div id="div1" @drop="drop($event)" @dragover.prevent @dragenter.prevent></div>
-      <div id="div2" @drop="drop($event)" @dragover.prevent @dragenter.prevent></div>
-      <div id="div3" @drop="drop($event)" @dragover.prevent @dragenter.prevent></div>
-      <div id="div4" @drop="drop($event)" @dragover.prevent @dragenter.prevent></div>
-    </div>
+      <div id="text">
+        <div
+          id="div1"
+          @drop="drop($event)"
+          @dragover.prevent
+          @dragenter.prevent
+        ></div>
+        <div
+          id="div2"
+          @drop="drop($event)"
+          @dragover.prevent
+          @dragenter.prevent
+        ></div>
+        <div
+          id="div3"
+          @drop="drop($event)"
+          @dragover.prevent
+          @dragenter.prevent
+        ></div>
+        <div
+          id="div4"
+          @drop="drop($event)"
+          @dragover.prevent
+          @dragenter.prevent
+        ></div>
+      </div>
+    </section>
   </div>
 </template>
 

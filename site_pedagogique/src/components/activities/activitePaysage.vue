@@ -1,44 +1,46 @@
 <template>
   <div>
-    <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
-    <p>Crée ton propre paysage en choisissant son contenu.</p>
-    <div v-if="ok" class="mainCanvas" id="toPdf">
-      <img :src="getImgPays(tab1[iHaut])" class="overlayImage" />
-      <img :src="getImgPays(tab2[iMilieu])" class="overlayImage" />
-      <img :src="getImgPays(tab3[iBas])" class="overlayImage" />
-    </div>
-    <div class="row">
-      <div @click="changeBas('gauche')" class="btn">
-        <img src="../../assets/arrowLeft.png" class="arrow" />
+    <section class="grisbg">
+      <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
+      <p class="def">Crée ton propre paysage en choisissant son contenu.</p>
+      <div v-if="ok" class="mainCanvas" id="toPdf">
+        <img :src="getImgPays(tab1[iHaut])" class="overlayImage" />
+        <img :src="getImgPays(tab2[iMilieu])" class="overlayImage" />
+        <img :src="getImgPays(tab3[iBas])" class="overlayImage" />
       </div>
-      <div class="col-2 choix">
-        <img :src="getImgPays(tab3[iBas])" class="previewImg" />
+      <div class="row">
+        <div @click="changeBas('gauche')" class="btn">
+          <img src="../../assets/arrowLeft.png" class="arrow" />
+        </div>
+        <div class="col-2 choix">
+          <img :src="getImgPays(tab3[iBas])" class="previewImg" />
+        </div>
+        <div @click="changeBas('droite')" class="btn">
+          <img src="../../assets/arrowRight.png" class="arrow" />
+        </div>
+        <div @click="changeMilieu('gauche')" class="btn">
+          <img src="../../assets/arrowLeft.png" class="arrow arrowL" />
+        </div>
+        <div class="col-2 choix choixL">
+          <img :src="getImgPays(tab2[iMilieu])" class="previewImg" />
+        </div>
+        <div @click="changeMilieu('droite')" class="btn">
+          <img src="../../assets/arrowRight.png" class="arrow" />
+        </div>
+        <div @click="changeHaut('gauche')" class="btn">
+          <img src="../../assets/arrowLeft.png" class="arrow arrowL" />
+        </div>
+        <div class="col-2 choix choixL">
+          <img :src="getImgPays(tab1[iHaut])" class="previewImg" />
+        </div>
+        <div @click="changeHaut('droite')" class="btn">
+          <img src="../../assets/arrowRight.png" class="arrow" />
+        </div>
       </div>
-      <div @click="changeBas('droite')" class="btn">
-        <img src="../../assets/arrowRight.png" class="arrow" />
+      <div class="row">
+        <button class="boutton" @click="exportToPDF">Exporter en PDF</button>
       </div>
-      <div @click="changeMilieu('gauche')" class="btn">
-        <img src="../../assets/arrowLeft.png" class="arrow arrowL" />
-      </div>
-      <div class="col-2 choix choixL">
-        <img :src="getImgPays(tab2[iMilieu])" class="previewImg" />
-      </div>
-      <div @click="changeMilieu('droite')" class="btn">
-        <img src="../../assets/arrowRight.png" class="arrow" />
-      </div>
-      <div @click="changeHaut('gauche')" class="btn">
-        <img src="../../assets/arrowLeft.png" class="arrow arrowL" />
-      </div>
-      <div class="col-2 choix choixL">
-        <img :src="getImgPays(tab1[iHaut])" class="previewImg" />
-      </div>
-      <div @click="changeHaut('droite')" class="btn">
-        <img src="../../assets/arrowRight.png" class="arrow" />
-      </div>
-    </div>
-    <div class="row">
-      <button class="boutton" @click="exportToPDF">Exporter en PDF</button>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -115,7 +117,7 @@ export default {
         filename: "paysage.pdf",
       });
     },
-  }
+  },
 };
 </script>
 
@@ -135,7 +137,7 @@ export default {
 .arrow {
   width: 4vw;
 }
-.choix{
+.choix {
   margin-bottom: 20px;
 }
 .arrowL {

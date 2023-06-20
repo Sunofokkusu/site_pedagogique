@@ -1,41 +1,43 @@
 <template>
   <div>
-    <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
-    <p>Mélange des couleurs avec le jaune pour voir le résultat.</p>
-    <div v-if="!melange">
-      <div class="row">
-        <div class="col-2 jaun"></div>
-        <div class="col-2" :class="color"></div>
-        <div class="col-1">
-          <div class="choixR" @click="color = 'roug'"></div>
-          <div class="choixB" @click="color = 'ble'"></div>
-          <div class="choixW" @click="color = 'white'"></div>
+    <section class="grisbg">
+      <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
+      <p>Mélange des couleurs avec le jaune pour voir le résultat.</p>
+      <div v-if="!melange">
+        <div class="row">
+          <div class="col-2 jaun"></div>
+          <div class="col-2" :class="color"></div>
+          <div class="col-1">
+            <div class="choixR" @click="color = 'roug'"></div>
+            <div class="choixB" @click="color = 'ble'"></div>
+            <div class="choixW" @click="color = 'white'"></div>
+          </div>
         </div>
+        <button @click="melanger" class="boutton">Mélanger</button>
       </div>
-      <button @click="melanger" class="boutton">Mélanger</button>
-    </div>
-    <div v-else>
-      <div class="row">
-        <div class="col-2" :class="colorMelange"></div>
+      <div v-else>
+        <div class="row">
+          <div class="col-2" :class="colorMelange"></div>
+        </div>
+        <button @click="reset" class="boutton">
+          Retour au choix des couleurs
+        </button>
       </div>
-      <button @click="reset" class="boutton">
-        Retour au choix des couleurs
-      </button>
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
   name: "activiteJaune",
-  data(){
-    return{
-        melange: false,
+  data() {
+    return {
+      melange: false,
       color: "white",
       colorMelange: "",
-    }
+    };
   },
-  methods:{
+  methods: {
     melanger() {
       this.melange = true;
       if (this.color === "white") {

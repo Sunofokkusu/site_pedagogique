@@ -1,24 +1,26 @@
 <template>
   <div>
-    <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
-    <p>
-      Le gris ne peut pas vraiment se mélanger avec d'autres couleurs...
-      Découvre plutôt certaines de ses nuances.
-    </p>
-    <div class="row">
-      <div class="col-4 nuanceGris"></div>
-    </div>
-    <div class="nomG"></div>
-    <button class="boutton" @click="changeGris">Suivante</button>
+    <section class="grisbg">
+      <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
+      <p class="def">
+        Le gris ne peut pas vraiment se mélanger avec d'autres couleurs...
+        Découvre plutôt certaines de ses nuances.
+      </p>
+      <div class="row">
+        <div class="col-4 nuanceGris"></div>
+      </div>
+      <div class="nomG"></div>
+      <button class="boutton" @click="changeGris">Suivante</button>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
   name: "activiteGris",
-  data(){
-    return{
-        nuances: [
+  data() {
+    return {
+      nuances: [
         "#606060",
         "#5A5E6B",
         "#C0C0C0",
@@ -51,14 +53,14 @@ export default {
         "Gris clair",
       ],
       index: 0,
-    }
+    };
   },
   mounted() {
     document.querySelector(".nuanceGris").style.backgroundColor =
       this.nuances[this.index];
     document.querySelector(".nomG").innerHTML = this.noms[this.index];
   },
-  methods:{
+  methods: {
     changeGris() {
       if (this.index === 13) {
         this.index = 0;
@@ -72,7 +74,7 @@ export default {
         document.querySelector(".nomG").innerHTML = this.noms[this.index];
       }
     },
-  }
+  },
 };
 </script>
 
