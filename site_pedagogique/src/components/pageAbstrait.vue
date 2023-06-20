@@ -2,83 +2,97 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce que l'art abstrait <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
+      <section class="grisbg">
+        <h2>
+          Qu'est ce que l'art abstrait
+          <font-awesome-icon icon="fa-solid fa-circle-question" />
+        </h2>
+        <p class="def">
+          Image qui représente des formes et des couleurs mélangés
+        </p>
+      </section>
+      <h2>
+        L'abstrait dans l'art
+        <font-awesome-icon icon="fa-solid fa-paintbrush" />
+      </h2>
       <p class="def">
-        L'art abstrait est un mouvement international qui domine tout le XXe
-        siècle. Il ne représente pas des sujets ou des objets du monde naturel,
-        mais des formes et des couleurs pour elles-mêmes.
+        Clique sur les cases pour avoir des informations sur l'œuvre.
       </p>
-      <h2>L'abstrait dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
-      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Sans titre, de Zao Wou-Ki
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/sanstitre.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Sans titre, de Zao Wou-Ki
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Congress, de Julie Mehretu
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/congress.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Congress, de Julie Mehretu
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Abstract Painting, de Gerhard Richter
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/abstract.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Abstract Painting, de Gerhard Richter
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Composition II in Red, Blue, and Yellow, de piet mondrian
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/composition.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Composition II in Red, Blue, and Yellow, de piet mondrian
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Sans titre, de Cy Twombly
+            <img class="col-2 img" src="../assets/exemples/cytwombly.jpg" />
           </div>
           <div class="card__face card__face--back">
-            <img class="col-2 img" src="../assets/exemples/cytwombly.jpg" />
+            Sans titre, de Cy Twombly
           </div>
         </div>
       </div>
-      <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
-      <p>
-        Dessine ton propre art abstrait.<br />Couleur:&nbsp;<input
-          type="color"
-          v-model="color"
-        />
-      </p>
-      <div id="toPdf">
-        <vue-drawing-canvas
-          :width="widthCanva"
-          :color="color"
-          lineJoin="round"
-          ref="VueCanvasDrawing"
-        />
-        <br />
-      </div>
-      <div class="row">
-        <button
-          @click.prevent="$refs.VueCanvasDrawing.reset()"
-          style="cursor: pointer"
-        >
-          Supprimer
-        </button>
-        <button style="cursor: pointer;margin-left: 10px" @click="exportToPDF">Exporter en PDF</button>
-      </div>
+      <section class="grisbg">
+        <h2>A toi de jouer <font-awesome-icon icon="fa-solid fa-gamepad" /></h2>
+        <p class="def">
+          Dessine ton propre art abstrait.<br />Couleur:&nbsp;<input
+            type="color"
+            v-model="color"
+          />
+        </p>
+        <div id="toPdf">
+          <vue-drawing-canvas
+            :width="widthCanva"
+            :color="color"
+            lineJoin="round"
+            ref="VueCanvasDrawing"
+          />
+          <br />
+        </div>
+        <div class="row">
+          <button
+            @click.prevent="$refs.VueCanvasDrawing.reset()"
+            style="cursor: pointer"
+          >
+            Supprimer
+          </button>
+          <button
+            style="cursor: pointer; margin-left: 10px"
+            @click="exportToPDF"
+          >
+            Exporter en PDF
+          </button>
+        </div>
+      </section>
       <h2>Les photos abstraites de l'exposition</h2>
-      <activiteGrotte/>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -90,8 +104,9 @@
         </div>
         <hr />
       </div>
-      <activiteLVIV2/>
-      <activiteSurLaTerre/>
+      <activiteGrotte />
+      <activiteLVIV2 />
+      <activiteSurLaTerre />
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pagePaysage' })"
@@ -110,13 +125,20 @@ import VueDrawingCanvas from "vue-drawing-canvas";
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
 import myJSON from "@/assets/photos.json";
-import activiteSurLaTerre from '@/components/activities/activiteSurLaTerre.vue';
-import activiteGrotte from '@/components/activities/activiteGrotte.vue';
+import activiteSurLaTerre from "@/components/activities/activiteSurLaTerre.vue";
+import activiteGrotte from "@/components/activities/activiteGrotte.vue";
 import activiteLVIV2 from "@/components/activities/activiteLVIV2.vue";
 import html2pdf from "html2pdf.js";
 export default {
   name: "pageAbstrait",
-  components: { headerPage, footerPage, VueDrawingCanvas, activiteSurLaTerre, activiteGrotte, activiteLVIV2 },
+  components: {
+    headerPage,
+    footerPage,
+    VueDrawingCanvas,
+    activiteSurLaTerre,
+    activiteGrotte,
+    activiteLVIV2,
+  },
   data() {
     return {
       jsonPhotos: myJSON,
@@ -161,6 +183,10 @@ body {
 .corps {
   margin-top: 60px;
 }
+.grisbg {
+  background-color: lightgray;
+  padding-bottom: 10px;
+}
 .navigation {
   height: 50px;
   background-color: black;
@@ -179,5 +205,6 @@ body {
 }
 #VueDrawingCanvas {
   border: 2px solid black;
+  background-color: white;
 }
 </style>

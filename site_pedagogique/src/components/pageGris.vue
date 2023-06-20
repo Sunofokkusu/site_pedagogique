@@ -2,57 +2,67 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce que le gris <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
+      <section class="grisbg">
+        <h2>
+          Qu'est ce qui est gris
+          <font-awesome-icon icon="fa-solid fa-circle-question" />
+        </h2>
+        <p class="def">
+          Les loups sont gris.<br/> Les souris sont grises.<br/> Les pigeons sont gris.<br/> Les cailloux sont gris. 
+        </p>
+      </section>
+      <h2>
+        Les oeuvres grises dans l'art
+        <font-awesome-icon icon="fa-solid fa-paintbrush" />
+      </h2>
       <p class="def">
-        Le gris est une couleur intermédiaire entre le blanc et le noir.
+        Clique sur les cases pour avoir des informations sur l'œuvre.
       </p>
-      <h2>Les oeuvres grises dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
-      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Guernica, de Pablo Picasso
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/guernica.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Guernica, de Pablo Picasso
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            L'arbre gris, de Piet Mondrian
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/arbre.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            L'arbre gris, de Piet Mondrian
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Le cheval gris, de Théodore Géricault
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/cheval.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Le cheval gris, de Théodore Géricault
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Girl in grey, de Louis Le Brocquy
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/girl.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Girl in grey, de Louis Le Brocquy
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Maternité, de Nguyen Thanh Binh
+            <img class="col-2 img" src="../assets/exemples/maternite.jpg" />
           </div>
           <div class="card__face card__face--back">
-            <img class="col-2 img" src="../assets/exemples/maternite.jpg" />
+            Maternité, de Nguyen Thanh Binh
           </div>
         </div>
       </div>
-      <activiteGris/>
+      <activiteGris />
       <h2>Les photos grises de l'exposition</h2>
-      <arbreBayle/>
+      <arbreBayle />
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -81,7 +91,7 @@
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
 import activiteGris from "@/components/activities/activiteGris.vue";
-import arbreBayle from '@/components/activities/arbreBayle.vue';
+import arbreBayle from "@/components/activities/arbreBayle.vue";
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pageGris",

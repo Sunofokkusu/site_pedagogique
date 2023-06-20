@@ -2,56 +2,65 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce qu'une nature morte <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
+      <section class="grisbg">
+        <h2>
+          Qu'est ce qu'une nature morte
+          <font-awesome-icon icon="fa-solid fa-circle-question" />
+        </h2>
+        <p class="def">
+          Image qui représente des objets 
+        </p>
+      </section>
+      <h2>
+        Les natures mortes dans l'art
+        <font-awesome-icon icon="fa-solid fa-paintbrush" />
+      </h2>
       <p class="def">
-        C'est une représentation d'objets inanimés placés d'une certaine manière
-        avec l'intention de faire passer un message.
+        Clique sur les cases pour avoir des informations sur l'œuvre.
       </p>
-      <h2>Les natures mortes dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
-      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Nature morte, de Fede Galizia
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/fede.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Nature morte, de Fede Galizia
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Une botte d’Asperges, de Edouard Manet
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/asperges.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Une botte d’Asperges, de Edouard Manet
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Le Panier de Pommes, de Paul Cézanne
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/pommes.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Le Panier de Pommes, de Paul Cézanne
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Nature Morte aux fruits dans des porcelaines, de Jacob Van Es
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/fruits.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Nature Morte aux fruits dans des porcelaines, de Jacob Van Es
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            La Nature Morte au Crâne, de Paul Cézanne
+            <img class="col-2 img" src="../assets/exemples/crane.jpg" />
           </div>
           <div class="card__face card__face--back">
-            <img class="col-2 img" src="../assets/exemples/crane.jpg" />
+            La Nature Morte au Crâne, de Paul Cézanne
           </div>
         </div>
       </div>
-      <activiteNatureMorte/>
+      <activiteNatureMorte />
       <h2>Les natures mortes de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">

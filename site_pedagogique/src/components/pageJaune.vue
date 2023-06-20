@@ -2,61 +2,68 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce que le jaune <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
+      <section class="grisbg">
+        <h2>
+          Qu'est ce qui est jaune
+          <font-awesome-icon icon="fa-solid fa-circle-question" />
+        </h2>
+        <p class="def">
+          Le soleil est jaune.<br/> Les poussins sont jaunes.<br/> Les bananes sont jaunes.<br/> Le pissenlit est jaune.
+        </p>
+      </section>
+      <h2>
+        Les oeuvres jaunes dans l'art
+        <font-awesome-icon icon="fa-solid fa-paintbrush" />
+      </h2>
       <p class="def">
-        Le jaune est une couleur primaire, c'est à dire une couleur qui ne peut
-        pas être reproduite par un mélange d'autres couleurs. C'est une couleur
-        lumineuse et chaleureuse. C’est la couleur du soleil, de la lumière et
-        de la gaieté.
+        Clique sur les cases pour avoir des informations sur l'œuvre.
       </p>
-      <h2>Les oeuvres jaunes dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
-      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Going to the Ball, de Turner
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/ball.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Going to the Ball, de Turner
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Les tournesols, de Van Gogh
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/tournesols.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Les tournesols, de Van Gogh
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Le phare de Collioure, de André Derain
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/phare.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Le phare de Collioure, de André Derain
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Le baiser, de Gustav Klimt
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/baiser.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Le baiser, de Gustav Klimt
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Jaune orange rouge, de Mark Rothko
+            <img class="col-2 img" src="../assets/exemples/jaune.jpg" />
           </div>
           <div class="card__face card__face--back">
-            <img class="col-2 img" src="../assets/exemples/jaune.jpg" />
+            Jaune orange rouge, de Mark Rothko
           </div>
         </div>
       </div>
-      <activiteJaune/>
+      <activiteJaune />
       <h2>Les photos jaunes de l'exposition</h2>
-      <activiteLVIV/>
-      <activiteLVIV2/>
+      <activiteLVIV />
+      <activiteLVIV2 />
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -68,7 +75,7 @@
         </div>
         <hr />
       </div>
-      <activiteVertiges/>
+      <activiteVertiges />
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pageBlanc' })"
@@ -92,7 +99,14 @@ import activiteLVIV2 from "@/components/activities/activiteLVIV2.vue";
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pageJaune",
-  components: { headerPage, footerPage, activiteJaune, activiteVertiges, activiteLVIV, activiteLVIV2 },
+  components: {
+    headerPage,
+    footerPage,
+    activiteJaune,
+    activiteVertiges,
+    activiteLVIV,
+    activiteLVIV2,
+  },
   data() {
     return {
       jsonPhotos: myJSON,

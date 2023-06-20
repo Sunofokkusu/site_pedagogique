@@ -2,59 +2,64 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce qu'un paysage <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
+      <section class="grisbg">
+        <h2>
+          Qu'est ce qu'un paysage
+          <font-awesome-icon icon="fa-solid fa-circle-question" />
+        </h2>
+        <p class="def">Image qui représente la nature.</p>
+      </section>
+      <h2>
+        Les paysages dans l'art
+        <font-awesome-icon icon="fa-solid fa-paintbrush" />
+      </h2>
       <p class="def">
-        Le paysage est constitué par l'ensemble des éléments observables à
-        partir d'un lieu précis. Dans l'art, c'est une représentation de la
-        nature.
+        Clique sur les cases pour avoir des informations sur l'œuvre.
       </p>
-      <h2>Les paysages dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
-      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
           <div class="card__face card__face--front">
-            La nuit étoilée, de Vincent van Gogh
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/nuit.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            La nuit étoilée, de Vincent van Gogh
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Soleil couchant à Etretat, de Monet
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/soleil.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Soleil couchant à Etretat, de Monet
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Le moine au bord de la mer, de Caspar David Friedrich
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/moine.png" />
           </div>
+          <div class="card__face card__face--back">
+            Le moine au bord de la mer, de Caspar David Friedrich
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Le Grand canal à l’église de la Salute, Giovanni Antonio Canal
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/canal.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Le Grand canal à l’église de la Salute, Giovanni Antonio Canal
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            L’Estaque, de André Derain
+            <img class="col-2 img" src="../assets/exemples/estaque.jpg" />
           </div>
           <div class="card__face card__face--back">
-            <img class="col-2 img" src="../assets/exemples/estaque.jpg" />
+            L’Estaque, de André Derain
           </div>
         </div>
       </div>
-      <activitePaysage/>
+      <activitePaysage />
       <h2>Les paysages de l'exposition</h2>
-      <arbreBayle/>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -66,7 +71,8 @@
         </div>
         <hr />
       </div>
-      <activiteVertiges/>
+      <arbreBayle />
+      <activiteVertiges />
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pagePortrait' })"
@@ -83,13 +89,19 @@
 <script>
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
-import arbreBayle from '@/components/activities/arbreBayle.vue';
+import arbreBayle from "@/components/activities/arbreBayle.vue";
 import activiteVertiges from "@/components/activities/activiteVertiges.vue";
 import myJSON from "@/assets/photos.json";
 import activitePaysage from "@/components/activities/activitePaysage.vue";
 export default {
   name: "pagePaysage",
-  components: { headerPage, footerPage, activitePaysage, arbreBayle, activiteVertiges },
+  components: {
+    headerPage,
+    footerPage,
+    activitePaysage,
+    arbreBayle,
+    activiteVertiges,
+  },
   data() {
     return {
       jsonPhotos: myJSON,
@@ -102,7 +114,7 @@ export default {
     this.jsonPhotos.photographies.forEach((photo) => {
       if (photo.theme === "paysage" && photo.activite === "non") {
         this.jsonPhotosSorted.push(photo);
-      }else if (photo.theme === "paysage" && photo.activite === "oui"){
+      } else if (photo.theme === "paysage" && photo.activite === "oui") {
         this.jsonPhotosSortedActivite.push(photo);
       }
     });
@@ -127,6 +139,9 @@ body {
 }
 .corps {
   margin-top: 60px;
+}
+.def {
+  font-size: 30px;
 }
 .navigation {
   height: 50px;

@@ -2,60 +2,67 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce qu'un portrait <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
+      <section class="grisbg">
+        <h2>
+          Qu'est ce qu'un portrait
+          <font-awesome-icon icon="fa-solid fa-circle-question" />
+        </h2>
+        <p class="def">
+          Image qui représente le visage d'une personne
+        </p>
+      </section>
+      <h2>
+        Les portraits dans l'art
+        <font-awesome-icon icon="fa-solid fa-paintbrush" />
+      </h2>
       <p class="def">
-        Représentation, d'après un modèle réel, d'un être (surtout d'un être
-        animé) par un artiste qui s'attache à en reproduire ou à en interpréter
-        les traits et expressions caractéristiques. Ici, les portraits sont
-        réalisés à l'aide d'un appareil photographique ou d'un téléphone mobile.
+        Clique sur les cases pour avoir des informations sur l'œuvre.
       </p>
-      <h2>Les portraits dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
-      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
           <div class="card__face card__face--front">
-            La Joconde, de Léonard de Vinci
-          </div>
-          <div class="card__face card__face--back">
             <img class="img" src="../assets/exemples/joconde.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            La Joconde, de Léonard de Vinci
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Autoportrait à l’oreille, de Vincent Van Gogh
-          </div>
-          <div class="card__face card__face--back col-2">
             <img class="img" src="../assets/exemples/oreille.jpg" />
           </div>
+          <div class="card__face card__face--back col-2">
+            Autoportrait à l’oreille, de Vincent Van Gogh
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            La jeune fille à la perle, de Johannes Vermeer
-          </div>
-          <div class="card__face card__face--back col-2">
             <img class="img" src="../assets/exemples/perle.jpg" />
           </div>
+          <div class="card__face card__face--back col-2">
+            La jeune fille à la perle, de Johannes Vermeer
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Portrait d’Adele Bloch Bauer I, de Gustav Klimt
-          </div>
-          <div class="card__face card__face--back col-2">
             <img class="img" src="../assets/exemples/portait.jpg" />
           </div>
+          <div class="card__face card__face--back col-2">
+            Portrait d’Adele Bloch Bauer I, de Gustav Klimt
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            L’afghane aux yeux verts, de Steve McCurry
+            <img class="img" src="../assets/exemples/yeux.jpg" />
           </div>
           <div class="card__face card__face--back col-2">
-            <img class="img" src="../assets/exemples/yeux.jpg" />
+            L’afghane aux yeux verts, de Steve McCurry
           </div>
         </div>
       </div>
-      <activitePortrait/>
+      <activitePortrait />
       <h2>Les portraits de l'exposition</h2>
-      <sleeplessCountry/>
+      <sleeplessCountry />
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -67,8 +74,8 @@
         </div>
         <hr />
       </div>
-      <activiteHomme/>
-      <activiteLVIV/>
+      <activiteHomme />
+      <activiteLVIV />
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pageNatureMorte' })"
@@ -85,14 +92,21 @@
 <script>
 import headerPage from "@/components/headerPages.vue";
 import footerPage from "@/components/footerPage.vue";
-import sleeplessCountry from '@/components/activities/sleeplessCountry.vue';
-import activitePortrait from '@/components/activities/activitePortrait.vue';
-import activiteHomme from '@/components/activities/activiteHomme.vue';
+import sleeplessCountry from "@/components/activities/sleeplessCountry.vue";
+import activitePortrait from "@/components/activities/activitePortrait.vue";
+import activiteHomme from "@/components/activities/activiteHomme.vue";
 import activiteLVIV from "@/components/activities/activiteLVIV.vue";
 import myJSON from "@/assets/photos.json";
 export default {
   name: "pagePortrait",
-  components: { headerPage, footerPage, sleeplessCountry, activitePortrait, activiteHomme, activiteLVIV },
+  components: {
+    headerPage,
+    footerPage,
+    sleeplessCountry,
+    activitePortrait,
+    activiteHomme,
+    activiteLVIV,
+  },
   data() {
     return {
       jsonPhotos: myJSON,
@@ -185,11 +199,8 @@ body {
   backface-visibility: hidden;
 }
 
-.card__face--front {
-  border: 1px solid black;
-}
-
 .card__face--back {
   transform: rotateY(180deg);
+  border: 1px solid black;
 }
 </style>

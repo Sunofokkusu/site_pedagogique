@@ -2,55 +2,63 @@
   <div>
     <headerPage />
     <div class="corps">
-      <h2>Qu'est ce que le bleu <font-awesome-icon icon="fa-solid fa-circle-question" /></h2>
+      <section class="grisbg">
+        <h2>
+          Qu'est ce qui est bleu
+          <font-awesome-icon icon="fa-solid fa-circle-question" />
+        </h2>
+        <p class="def">
+          Le ciel est bleu.<br/> La mer est bleue.<br/> Le maillot de l'équipe de France est bleu.<br/> Les schtroumpfs sont bleus.
+        </p>
+      </section>
+      <h2>
+        Les oeuvres bleues dans l'art
+        <font-awesome-icon icon="fa-solid fa-paintbrush" />
+      </h2>
       <p class="def">
-        Le bleu est une couleur primaire, c'est à dire une couleur qui ne peut
-        pas être reproduite par un mélange d'autres couleurs. C'est l'une des
-        couleurs les plus courantes dans la nature et la vie quotidienne.
+        Clique sur les cases pour avoir des informations sur l'œuvre.
       </p>
-      <h2>Les oeuvres bleues dans l'art <font-awesome-icon icon="fa-solid fa-paintbrush" /></h2>
-      <p>Clique sur les cases pour faire apparaître les œuvres.</p>
       <div class="row">
         <div class="card col-2">
-          <div class="card__face card__face--front">Jour bleu, de Cfey</div>
-          <div class="card__face card__face--back">
+          <div class="card__face card__face--front">
             <img class="col-2 img" src="../assets/exemples/jour.jpg" />
           </div>
+          <div class="card__face card__face--back">Jour bleu, de Cfey</div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Depuis un endroit élevé, de Stuart Dalby
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/eleve.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Depuis un endroit élevé, de Stuart Dalby
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Perception bleue 2, de Weilong Chen
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/perception.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Perception bleue 2, de Weilong Chen
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Self-Portrait, de Vincent van Gogh
-          </div>
-          <div class="card__face card__face--back">
             <img class="col-2 img" src="../assets/exemples/self.jpg" />
           </div>
+          <div class="card__face card__face--back">
+            Self-Portrait, de Vincent van Gogh
+          </div>
         </div>
         <div class="card col-2">
           <div class="card__face card__face--front">
-            Starry Night, de Vincent van Gogh
+            <img class="col-2 img" src="../assets/exemples/starry.jpg" />
           </div>
           <div class="card__face card__face--back">
-            <img class="col-2 img" src="../assets/exemples/starry.jpg" />
+            Starry Night, de Vincent van Gogh
           </div>
         </div>
       </div>
-      <activiteBleu/>
+      <activiteBleu />
       <h2>Les photos bleues de l'exposition</h2>
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
