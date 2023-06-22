@@ -5,7 +5,7 @@
       "nom": "Je fixerai des vertiges",
       "photographe": "Georges PACHECO",
       "description": ["Il y a une montagne, des nuages et le ciel", "Ensemble ils font un paysage"],
-      "picto": "",
+      "picto": "image.png",
       "theme": "paysage",
       "couleur": "bleu",
       "activite": "non"
@@ -15,7 +15,7 @@
       "nom": "Oneiros",
       "photographe": "Armelle TULUNDA",
       "description": ["C’est une tâche qui a une forme particulière", "Cela ne semble pas réel", "C’est abstrait"],
-      "picto": "",
+      "picto": "tache.png",
       "theme": "abstrait",
       "couleur": "noir",
       "activite": "non"
@@ -25,7 +25,7 @@
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
       "description": ["Sur cette image on voit une licorne", "Elle est fabriquée avec des pneus", "Les pneus sont des objets", "C’est une nature morte"],
-      "picto": "",
+      "picto": "pneus.png",
       "theme": "natureMorte",
       "couleur": "bleu",
       "activite": "non"
@@ -35,7 +35,7 @@
       "nom": "On street",
       "photographe": "",
       "description": ["Comme sur les exemples", "Il y a des fruits", "Les fruits ne sont pas vivants", "C’est une nature morte"],
-      "picto": "",
+      "picto": "raisin.png",
       "theme": "natureMorte",
       "couleur": "jaune",
       "activite": "non"
@@ -45,7 +45,7 @@
       "nom": "Nuit d'orages",
       "photographe": "Frantiek ZVARDON",
       "description": ["Il y a des orages Les éclairs font de la lumière", "Qu’est ce qui peut aussi faire de la lumière ?", "Combien vois-tu d’éclairs ?"],
-      "picto": "",
+      "picto": "tonnerre.png",
       "theme": "paysage",
       "couleur": "jaune",
       "activite": "non"
@@ -55,7 +55,7 @@
       "nom": "Les ballons",
       "photographe": "Bernard FAUCON",
       "description": ["Il y a plein de ballons blancs", "Les petits ballons blancs sont loin", "Les gros ballons blancs sont proches", "C’est la perspective"],
-      "picto": "",
+      "picto": "perspective.png",
       "theme": "paysage",
       "couleur": "bleu",
       "activite": "non"
@@ -65,7 +65,7 @@
       "nom": "Circle of water",
       "photographe": "Michael KENNA",
       "description": ["Vu du haut l’étang est rond", "Depuis le bord de l’étang", "C’est un ovale"],
-      "picto": "",
+      "picto": "cercle.png",
       "theme": "paysage",
       "couleur": "gris",
       "activite": "non"
@@ -75,7 +75,7 @@
       "nom": "Les herbes",
       "photographe": "Patrick BAILLY-MAÎTRE-GRAND",
       "description": ["Les ombres noires des plantes", "Créent une forme noire sur fond blanc", "C’est une silhouette"],
-      "picto": "",
+      "picto": "herbe.png",
       "theme": "paysage",
       "couleur": "noir",
       "activite": "non"
@@ -85,7 +85,7 @@
       "nom": "Bayle",
       "photographe": "François BOUTAUD",
       "description": ["La photo est composée de petits points", "Les points sont noirs, blancs ou gris", "Ensembles ils créent une image"],
-      "picto": "",
+      "picto": "trame.png",
       "theme": "paysage",
       "couleur": "gris",
       "activite": "oui"
@@ -95,7 +95,7 @@
       "nom": "Failles, entre lieux et non-lieux",
       "photographe": "Franck POURCEL",
       "description": ["Le renne est devant", "C’est le premier plan", "Les arbres sont derrière", "C’est l’arrière-plan"],
-      "picto": "",
+      "picto": "renne.png",
       "theme": "paysage",
       "couleur": "blanc",
       "activite": "non"
@@ -105,7 +105,7 @@
       "nom": "Je fixerai des vertiges",
       "photographe": "Georges PACHECO",
       "description": ["Le paysage est dans le noir", "Éclaire-le avec la lampe de poche"],
-      "picto": "",
+      "picto": "lampe.png",
       "theme": "paysage",
       "couleur": "jaune",
       "activite": "oui"
@@ -115,7 +115,7 @@
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
       "description": ["Le fond de l’image passe du rose au jaune", "Ce changement de couleur", "S’appelle un dégradé"],
-      "picto": "",
+      "picto": "degrade.png",
       "theme": "natureMorte",
       "couleur": "jaune",
       "activite": "non"
@@ -125,7 +125,7 @@
       "nom": "I am folding the land",
       "photographe": "Catherine CATTARUZZA",
       "description": ["Je voyais ce paysage quand j’étais petit", "Il me rappelle pleins de souvenirs"],
-      "picto": "",
+      "picto": "memoire.png",
       "theme": "paysage",
       "couleur": "jaune",
       "activite": "non"
@@ -135,7 +135,7 @@
       "nom": "Bayle",
       "photographe": "François BOUTAUD",
       "description": ["La lune est dans le ciel", "Un homme la regarde", "La lune se reflète dans ses lunettes"],
-      "picto": "",
+      "picto": "lune.png",
       "theme": "portrait",
       "couleur": "noir",
       "activite": "non"
@@ -145,7 +145,7 @@
       "nom": "Bayle",
       "photographe": "François BOUTAUD",
       "description": ["Les humains ont des visages", "La vache a-t-elle un visage ?"],
-      "picto": "",
+      "picto": "vache.png",
       "theme": "portrait",
       "couleur": "gris",
       "activite": "non"
@@ -155,7 +155,7 @@
       "nom": "Sleepless country",
       "photographe": "Adrienne SUPRENANT",
       "description": ["Quelqu’un se cache dans le noir", "Cherche-le ! ", "A-t-il l’air heureux ou triste ? "],
-      "picto": "",
+      "picto": "lampe.png",
       "theme": "portrait",
       "couleur": "noir",
       "activite": "oui"
@@ -165,7 +165,7 @@
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
       "description": ["Il existe plusieurs couleurs", "Chaque couleur a son opposé", "La couleur opposée au jaune est le bleu"],
-      "picto": "",
+      "picto": "peinture.png",
       "theme": "portrait",
       "couleur": "jaune",
       "activite": "oui"
@@ -175,7 +175,7 @@
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
       "description": ["Il y a un cheval sur la photo", "La tête du cheval est d’un côté", "Les pattes du cheval de l’autre côté", "Il ne semble pas réel"],
-      "picto": "",
+      "picto": "cheval.png",
       "theme": "abstrait",
       "couleur": "jaune",
       "activite": "non"
@@ -185,7 +185,7 @@
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
       "description": ["Il existe plusieurs couleurs", "Chaque couleur a son opposé", "Découvre quelles sont les couleurs opposées", "Présentes sur la photo"],
-      "picto": "",
+      "picto": "peinture.png",
       "theme": "abstrait",
       "couleur": "jaune",
       "activite": "oui"
@@ -195,7 +195,7 @@
       "nom": "Grotte du trou noir",
       "photographe": "François DENIS",
       "description": ["Que vois-tu sur cette photo ?", "Essaie de le redessiner"],
-      "picto": "",
+      "picto": "crayon.png",
       "theme": "abstrait",
       "couleur": "noir",
       "activite": "oui"
@@ -205,7 +205,7 @@
       "nom": "Space",
       "photographe": "",
       "description": ["Il y a des canards dans une mare", "C’est une fausse mare", "Ce sont de faux canards"],
-      "picto": "",
+      "picto": "canard.png",
       "theme": "natureMorte",
       "couleur": "bleu",
       "activite": "non"
@@ -215,7 +215,7 @@
       "nom": "Sur la terre comme au ciel",
       "photographe": "Armelle TULUNDA",
       "description": ["La nuit les lampadaires éclairent les rues", "Le jour le soleil éclaire les rues"],
-      "picto": "",
+      "picto": "nuit_jour.png",
       "theme": "abstrait",
       "couleur": "noir",
       "activite": "oui"
@@ -225,7 +225,7 @@
       "nom": "Eres una maravilla",
       "photographe": "Magali LAMBERT",
       "description": ["Le crocodile porte une couronne", "Il a l’air méchant", "Quand on porte une couronne on est le roi"],
-      "picto": "",
+      "picto": "couronne.png",
       "theme": "natureMorte",
       "couleur": "noir",
       "activite": "non"
@@ -235,7 +235,7 @@
       "nom": "LVIV",
       "photographe": "Viacheslav POLIAKOV",
       "description": ["Un n’y a qu’une couleur dans le fond de l’image", "On appelle cela un aplat de couleur"],
-      "picto": "",
+      "picto": "aplat.png",
       "theme": "natureMorte",
       "couleur": "bleu",
       "activite": "non"
@@ -245,7 +245,7 @@
       "nom": "Ostende",
       "photographe": "Yvon LAMBERT",
       "description": ["Sur cette image les éléments sont difficiles à voir", "On dit qu’ils sont flous", "Il y a une fleur rouge qu’on voit bien", "On dit qu’elle est nette"],
-      "picto": "",
+      "picto": "net_flou.png",
       "theme": "natureMorte",
       "couleur": "blanc",
       "activite": "non"
@@ -255,7 +255,7 @@
       "nom": "Ostende",
       "photographe": "Yvon LAMBERT",
       "description": ["La mouette est un animal", "Elle est vivante", "Les pommes, bananes et clémentines sont des fruits", "Ils ne sont pas vivants"],
-      "picto": "",
+      "picto": "fruit.png",
       "theme": "natureMorte",
       "couleur": "bleu",
       "activite": "non"
@@ -265,7 +265,7 @@
       "nom": "Hazard",
       "photographe": "Armelle TULUNDA",
       "description": ["Il y a pleins de petites gouttes d’eau", "Il a dû pleuvoir", "On dirait des petits points blancs"],
-      "picto": "",
+      "picto": "pluie.png",
       "theme": "abstrait",
       "couleur": "noir",
       "activite": "non"
@@ -275,7 +275,7 @@
       "nom": "Failles, entre lieux et non-lieux",
       "photographe": "Franck POURCEL",
       "description": ["Devant y a une forme de cœur", "Et une forme d’ours", "Ces formes sont des silhouettes", "Et à l’arrière il y a la mer"],
-      "picto": "",
+      "picto": "coeur.png",
       "theme": "paysage",
       "couleur": "bleu",
       "activite": "non"
@@ -285,7 +285,7 @@
       "nom": "",
       "photographe": "",
       "description": ["Il a neigé", "Dehors tout est blanc", "On ne voit plus que les arbres"],
-      "picto": "",
+      "picto": "neige.png",
       "theme": "",
       "couleur": "blanc",
       "activite": "non"
@@ -295,7 +295,7 @@
       "nom": "",
       "photographe": "",
       "description": ["Il y a un homme au milieu de l’image", "Les traces de pas dans la neige", "Forment un triangle", "Vois-tu le triangle ?", "Passe ta souris sur l’image pour le découvrir"],
-      "picto": "",
+      "picto": "triangle.png",
       "theme": "portrait",
       "couleur": "blanc",
       "activite": "oui"
@@ -305,7 +305,7 @@
       "nom": "",
       "photographe": "",
       "description": ["Si je touche la montage", "Elle est dure", "Et si je touche les nuages", "Ils sont doux", "Ils ont des textures différentes"],
-      "picto": "",
+      "picto": "montagne.png",
       "theme": "paysage",
       "couleur": "gris",
       "activite": "non"
@@ -315,7 +315,7 @@
       "nom": "",
       "photographe": "",
       "description": ["Le cône est devant", "Il est au premier plan", "Le buisson est derrière", "Il est à l’arrière-plan"],
-      "picto": "",
+      "picto": "perspective.png",
       "theme": "natureMorte",
       "couleur": "noir",
       "activite": "non"
