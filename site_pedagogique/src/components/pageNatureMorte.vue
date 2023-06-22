@@ -86,7 +86,7 @@
         >◀ Abstrait</span
       >
       <span class="next" @click="this.$router.push({ name: 'pagePortrait' })"
-        >Portait ▶</span
+        >Portrait ▶</span
       >
     </div>
     <footerPage />
