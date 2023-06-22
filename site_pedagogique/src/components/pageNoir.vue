@@ -62,7 +62,6 @@
       </div>
       <activiteNoir />
       <h2>Les photos noires de l'exposition</h2>
-      <sleeplessCountry />
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
           <img class="col-4" :src="getImg(photo.chemin)" />
@@ -76,6 +75,7 @@
       </div>
       <activiteGrotte />
       <activiteSurLaTerre />
+      <sleeplessCountry />
     </div>
     <div class="navigation">
       <span class="prev" @click="this.$router.push({ name: 'pageBleu' })"
