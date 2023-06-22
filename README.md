@@ -15,3 +15,7 @@ npm install @websitebeaver/vue-magnifier
 npm install vue-zoomer
 
 npm install node-vibrant
+
+# Version en ligne
+
+https://site-pedagogique.netlify.app/
