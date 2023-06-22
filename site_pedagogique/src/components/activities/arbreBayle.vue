@@ -7,6 +7,7 @@
       <div class="col-6">
         <h2>Bayle</h2>
         <p>François BOUTAUD</p>
+        <p>La photo est composée de petits points<br/>Les points sont noirs, blancs ou gris<br/>Ensembles ils créent une image</p>
       </div>
     </div>
     <hr />

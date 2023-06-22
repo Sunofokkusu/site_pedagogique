@@ -6,7 +6,7 @@
         <h2>Grotte du trou noir</h2>
         <p>François DENIS</p>
         <p>
-          Que vois-tu sur cette photographie? Essaie de la reproduire en dessin!<br />Couleur:&nbsp;<input
+          Que vois-tu sur cette photo ?<br/>Essaie de le redessiner<br />Couleur:&nbsp;<input
             type="color"
             v-model="color"
           />

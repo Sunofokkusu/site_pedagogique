@@ -70,7 +70,7 @@
           <div class="col-6">
             <h2>{{ photo.nom }}</h2>
             <p>{{ photo.photographe }}</p>
-            <p>{{ photo.description }}</p>
+            <p v-for="ligne in photo.description" :key="ligne">{{ ligne }}</p>
           </div>
         </div>
         <hr />

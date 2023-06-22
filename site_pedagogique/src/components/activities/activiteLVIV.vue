@@ -6,8 +6,7 @@
         <h2>LVIV</h2>
         <p>Viacheslav POLIAKOV</p>
         <p>
-          Passe ta souris sur le carré coloré pour découvrir sa couleur
-          complémentaire!
+          Il existe plusieurs couleurs<br/>Chaque couleur a son opposé<br/>La couleur opposée au jaune est le bleu
         </p>
         <div class="align">
           <div class="jauneLVIV">

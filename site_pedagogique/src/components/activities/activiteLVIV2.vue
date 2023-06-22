@@ -6,8 +6,7 @@
         <h2>LVIV</h2>
         <p>Viacheslav POLIAKOV</p>
         <p>
-          Passe ta souris sur les carrés colorés pour découvrir leur couleur
-          complémentaire!
+          Il existe plusieurs couleurs<br/>Chaque couleur a son opposé<br/>Découvre quelles sont les couleurs opposées<br/>Présentes sur la photo
         </p>
         <div class="align2">
           <div class="blLVIV">

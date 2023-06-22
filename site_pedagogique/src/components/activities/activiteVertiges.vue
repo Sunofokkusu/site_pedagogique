@@ -2,6 +2,7 @@
   <div>
     <h2>Je fixerai des vertiges</h2>
     <p>Georges PACHECO</p>
+    <p>Le paysage est dans le noir<br/>Éclaire-le avec la lampe de poche</p>
     <div class="cursor">
       <div class="wrapper2"><div class="shadow"></div></div>
     </div>

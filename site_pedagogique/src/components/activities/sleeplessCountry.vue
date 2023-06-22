@@ -2,6 +2,7 @@
   <div>
     <h2>Sleepless country</h2>
     <p>Adrienne SURPRENANT</p>
+    <p>Quelqu’un se cache dans le noir<br/>Cherche-le ! <br/>A-t-il l’air heureux ou triste ?</p>
     <div class="cursor">
       <div class="wrapper"><div class="shadow"></div></div>
     </div>
