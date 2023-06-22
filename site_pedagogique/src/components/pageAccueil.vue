@@ -19,7 +19,7 @@
       </h2>
       <div class="row">
         <img class="imgintro col-5" src="../assets/photos/intro.jpg" />
-        <p class="col-5 q-mt-sm">
+        <p class="col-5 q-mt-sm falc">
           Il existe plusieurs manières de faire des images<br />
           La peinture, le dessin et aussi la photographie<br />
           La photographie est une manière de faire des images <br />
@@ -114,7 +114,7 @@
         INFORMATIONS <font-awesome-icon icon="fa-solid fa-circle-info" />
       </h2>
       <div class="row pb">
-        <div class="col-4 adress">
+        <div class="col-md-4 col-12 adress">
           47 Bd d’Austrasie – à côté de l’Autre Canal <br />
           <div class="map">
             <l-map
@@ -133,7 +133,7 @@
             </l-map>
           </div>
         </div>
-        <div class="col-4 q-ml-md">
+        <div class="col-md-4 col-12 q-ml-md">
           L’OCTROI NANCY. Du 12 mai au 4 juin 2023<br />
           Vernissage • 12 mai 2023 à 18h <br />
           <hr class="sepInfo" />
@@ -332,14 +332,14 @@ hr {
   width: 40%;
 }
 .map {
-  height: 100%;
+  height: 25vh;
   width: 100%;
 }
 body {
   margin: 0 !important;
 }
 .pb {
-  padding-bottom: 65px;
+  padding-bottom: 50px;
 }
 .pb2 {
   padding-bottom: 20px;

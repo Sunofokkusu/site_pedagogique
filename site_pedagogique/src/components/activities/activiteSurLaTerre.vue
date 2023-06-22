@@ -1,16 +1,16 @@
 <template>
   <div>
     <div class="row">
-      <v-zoomer style="width: 500px; height: 500px" class="col-4">
+      <v-zoomer style="width: 500px; height: 500px" class="col-md-4 col-12">
         <img
           :src="getImg(currentImgComputed)"
           style="object-fit: contain; width: 100%; height: 100%"
         />
       </v-zoomer>
-      <div class="col-6">
+      <div class="col-md-6 col-12">
         <div class="row">
-          <h2 class="col-10">Sur la terre comme au ciel</h2>
-          <div class="col-2" v-if="charged">
+          <h2 class="col-md-10 col-7">Sur la terre comme au ciel</h2>
+          <div class="col-md-2 col-4" v-if="charged">
             <div class="switch">
               <label for="toggle">
                 <input
@@ -30,7 +30,12 @@
           </div>
         </div>
         <p>Armelle TULUNDA</p>
-        <p>La nuit les lampadaires éclairent les rues<br/>Le jour le soleil éclaire les rues</p>
+        <div class="row">
+              <img class="pictog col-4" src="../../assets/pictos/nuit_jour.png" />
+              <div class="col-8">
+                <p class="falc">La nuit les lampadaires éclairent les rues<br/>Le jour le soleil éclaire les rues</p>
+              </div>
+            </div>
       </div>
     </div>
     <hr />

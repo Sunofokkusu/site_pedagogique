@@ -1,18 +1,24 @@
 <template>
   <div>
     <div class="row">
-      <img class="col-4" src="../../assets/photos/LVIV.jpg" />
-      <div class="col-6">
+      <img class="col-md-4 col-12" src="../../assets/photos/LVIV.jpg" />
+      <div class="col-md-6 col-12">
         <h2>LVIV</h2>
         <p>Viacheslav POLIAKOV</p>
-        <p>
-          Il existe plusieurs couleurs<br/>Chaque couleur a son opposé<br/>La couleur opposée au jaune est le bleu
-        </p>
-        <div class="align">
-          <div class="jauneLVIV">
-            <q-tooltip anchor="center middle" self="center middle">
-              <div class="bleuLVIV"></div>
-            </q-tooltip>
+        <div class="row">
+          <img class="pictog col-4" src="../../assets/pictos/peinture.png" />
+          <div class="col-8">
+            <p class="falc">
+              Il existe plusieurs couleurs<br />Chaque couleur a son opposé<br />La
+              couleur opposée au jaune est le bleu
+            </p>
+            <div class="align">
+              <div class="jauneLVIV">
+                <q-tooltip anchor="center middle" self="center middle">
+                  <div class="bleuLVIV"></div>
+                </q-tooltip>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -31,7 +37,6 @@ export default {
 <style>
 .align {
   display: flex;
-  margin-left: 42%;
 }
 .jauneLVIV {
   background-color: #dfcf32;

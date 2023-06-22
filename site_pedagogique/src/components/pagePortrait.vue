@@ -62,14 +62,20 @@
       </div>
       <activitePortrait />
       <h2>Les portraits de l'exposition</h2>
-      <sleeplessCountry />
       <div class="photosInfos" v-for="photo in jsonPhotosSorted" :key="photo">
         <div class="row">
-          <img class="col-4" :src="getImg(photo.chemin)" />
-          <div class="col-6">
+          <img class="col-md-4 col-12" :src="getImg(photo.chemin)" />
+          <div class="col-md-6 col-12">
             <h2>{{ photo.nom }}</h2>
             <p>{{ photo.photographe }}</p>
-            <p v-for="ligne in photo.description" :key="ligne">{{ ligne }}</p>
+            <div class="row">
+              <img class="pictog col-4" :src="getPicto(photo.picto)" />
+              <div class="col-8">
+                <p class="falc" v-for="ligne in photo.description" :key="ligne">
+                  {{ ligne }}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <hr />
@@ -134,6 +140,9 @@ export default {
   methods: {
     getImg(img) {
       return require(`../assets/photos/${img}`);
+    },
+    getPicto(img) {
+      return require(`../assets/pictos/${img}`);
     },
   },
 };

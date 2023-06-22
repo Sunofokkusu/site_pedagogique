@@ -1,10 +1,22 @@
 <template>
   <div>
-    <h2>Sleepless country</h2>
-    <p>Adrienne SURPRENANT</p>
-    <p>Quelqu’un se cache dans le noir<br/>Cherche-le ! <br/>A-t-il l’air heureux ou triste ?</p>
-    <div class="cursor">
-      <div class="wrapper"><div class="shadow"></div></div>
+    <div class="row">
+      <div class="cursor col-12">
+        <div class="wrapper"><div class="shadow"></div></div>
+      </div>
+      <div class="col-md-6 col-12">
+        <h2>Sleepless country</h2>
+        <p>Adrienne SURPRENANT</p>
+        <div class="row">
+          <img class="pictog col-4" src="../../assets/pictos/lampe.png" />
+          <div class="col-8">
+            <p class="falc">
+              Quelqu’un se cache dans le noir<br />Cherche-le ! <br />A-t-il
+              l’air heureux ou triste ?
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <hr />
   </div>

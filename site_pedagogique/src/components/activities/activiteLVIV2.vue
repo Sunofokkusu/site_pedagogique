@@ -1,11 +1,14 @@
 <template>
   <div>
     <div class="row">
-      <img class="col-4" src="../../assets/photos/LVIV5.png" />
-      <div class="col-6">
+      <img class="col-md-4 col-12" src="../../assets/photos/LVIV5.png" />
+      <div class="col-md-6 col-12">
         <h2>LVIV</h2>
         <p>Viacheslav POLIAKOV</p>
-        <p>
+        <div class="row">
+              <img class="pictog col-4" src="../../assets/pictos/peinture.png" />
+              <div class="col-8">
+                <p class="falc">
           Il existe plusieurs couleurs<br/>Chaque couleur a son opposé<br/>Découvre quelles sont les couleurs opposées<br/>Présentes sur la photo
         </p>
         <div class="align2">
@@ -35,6 +38,8 @@
             </q-tooltip>
           </div>
         </div>
+              </div>
+            </div>
       </div>
     </div>
     <hr />
@@ -51,7 +56,6 @@ export default {
 <style>
 .align2 {
   display: flex;
-  margin-left: 5%;
 }
 .blLVIV {
   background-color: #3f84ae;
@@ -61,7 +65,7 @@ export default {
 }
 .mrLVIL {
   background-color: #ae693f;
-  width: 9vw;
+  width: 5vw;
   height: 9vh;
   border: 1px solid black;
 }
@@ -74,7 +78,7 @@ export default {
 }
 .bleuuLVIV {
   background-color: #7eabde;
-  width: 9vw;
+  width: 5vw;
   height: 9vh;
   border: 1px solid black;
 }
@@ -87,7 +91,7 @@ export default {
 }
 .vertLVIV {
   background-color: #0ed8a6;
-  width: 9vw;
+  width: 5vw;
   height: 9vh;
   border: 1px solid black;
 }
@@ -100,7 +104,7 @@ export default {
 }
 .roujLVIV {
   background-color: #d52900;
-  width: 9vw;
+  width: 5vw;
   height: 9vh;
   border: 1px solid black;
 }
@@ -113,7 +117,7 @@ export default {
 }
 .vertCLVIV {
   background-color: #9ceac1;
-  width: 9vw;
+  width: 5vw;
   height: 9vh;
   border: 1px solid black;
 }

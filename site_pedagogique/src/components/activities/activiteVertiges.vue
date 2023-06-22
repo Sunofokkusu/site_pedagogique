@@ -1,10 +1,21 @@
 <template>
   <div>
-    <h2>Je fixerai des vertiges</h2>
-    <p>Georges PACHECO</p>
-    <p>Le paysage est dans le noir<br/>Éclaire-le avec la lampe de poche</p>
-    <div class="cursor">
-      <div class="wrapper2"><div class="shadow"></div></div>
+    <div class="row">
+      <div class="cursor col-12">
+        <div class="wrapper2"><div class="shadow"></div></div>
+      </div>
+      <div class="col-md-6 col-12">
+        <h2>Je fixerai des vertiges</h2>
+        <p>Georges PACHECO</p>
+        <div class="row">
+          <img class="pictog col-4" src="../../assets/pictos/lampe.png" />
+          <div class="col-8">
+            <p class="falc">
+              Le paysage est dans le noir<br />Éclaire-le avec la lampe de poche
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <hr />
   </div>
