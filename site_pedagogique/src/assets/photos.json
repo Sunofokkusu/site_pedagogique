@@ -44,7 +44,7 @@
       "chemin": "nuit_dorages.jpg",
       "nom": "Nuit d'orages",
       "photographe": "Frantiek ZVARDON",
-      "description": ["Il y a des orages Les éclairs font de la lumière", "Qu’est ce qui peut aussi faire de la lumière ?", "Combien vois-tu d’éclairs ?"],
+      "description": ["Il y a des orages", "Les éclairs font de la lumière", "Qu’est ce qui peut aussi faire de la lumière ?", "Combien vois-tu d’éclairs ?"],
       "picto": "tonnerre.png",
       "theme": "paysage",
       "couleur": "jaune",
